@@ -1,0 +1,1 @@
+Gigantessa, capa del gruppo ci ha attaccato, ora è schiava di [[Grumal]] 
