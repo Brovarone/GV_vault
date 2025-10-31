@@ -1,0 +1,14 @@
+Assassino
+Barbaro
+Bardo
+Druido
+Guerriero
+Magewar
+Mago
+Monaco
+Paladino
+Ranger
+Sacerdote
+Sciamano
+Specialista
+Vagabondo
