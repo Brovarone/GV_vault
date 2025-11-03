@@ -44,50 +44,31 @@ path_talenti: z_GV/Talenti
 >            p.class === classe3 && p.level <= max_classe3
 >        )
 >    )
->    .sort(p => p.class, 'asc')
 >    .sort(p => p.level, 'asc')
+>    .sort(p => p.class, 'asc')
 >    .sort(p => p.file.name, 'asc');
 >
 >// 4. Visualizzazione dei risultati in una tabella
 >dv.table(
->    ["Nome", "Classe", "Livello", "Albero/Stile", "Prerequisiti"], 
+>    ["Nome", "Classe", "Livello", "Prerequisiti"], 
 >    risultati.map(p => [
 >        p.file.link, 
 >        p.class,
 >        p.level,
->        p.group_name,
 >        p.prerequisites
 >    ])
 >);
 >```
 
+>[!SUMMARY]- Lista Benefici
+> ```dataview
+> LIST
+>  FROM ""
+> WHERE
+>  type = "Beneficio"
+>   
+>
 
-> `LIST` 
->  `FROM ""`
-> `WHERE` 
->  `type = "Talento"`
->   `AND (`
->	    `(`
->            `(class = "Generali" or class = this.razza)`
->            `AND level <= (this.classe1_max + this.classe2_max + this.classe3_max )`
->        `)`
->        `OR`
->        `(`
->            `class = this.classe1` 
->            `AND level <= this.classe1_max`
->        `)` 
->        `OR` 
->        `(`
->            `class = this.classe2` 
->            `AND level <= this.classe2_max`
->        `)` 
->        `OR` 
->        `(`
->            `class = this.classe3` 
->            `AND level <= this.classe3_max`
->        `)`
->    `)`
->`SORT class ASC, level ASC, file.name ASC`
 ```
 
 >[!TIP]

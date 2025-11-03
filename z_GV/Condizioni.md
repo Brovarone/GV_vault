@@ -15,3 +15,6 @@
 	- +2 Difese
 - Indebolito ^Indebolito
 	- Il bersaglio quando attacca o effettua prove di abilità fisiche deve effettuare due tiri di d20 e considerare valido il minore
+- Disorientato ^Disorientato
+	- Il bersaglio concede VIC 2
+	- Il bersaglio può eseguire solo l'azione di movimento e l'azione minore durante il suo round regolare

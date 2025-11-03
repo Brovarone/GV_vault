@@ -28,18 +28,18 @@ Valutare doppio attacco !!
 Abilità: Costituzione, Saggezza, Destrezza
 **Difese:** Riflessi, Tempra
 
-| Tipo  | Classe | Nome                          | Costo |
-| ----- | ------ | ----------------------------- | ----- |
-| Tal   | gen    | Competenza Arma ( _Randello_) | 5     |
-| Stile | alb 1  | Furtivo in critico            | 4=9   |
-|       | alb 3  | Preparare il critico          | 4=13  |
-| Benef |        | Vigore (1pf)                  | 1=14  |
-| Benef |        | Tempra Forte (+1 ts T)        | 1=15  |
-| Benef |        | Volontà ferrea (+1 ts V)      | 1=16  |
-| Benef |        | Strumento arma                | 1=17  |
-| Benef |        | Riflessi agili (+1 ts R)      | 1=18  |
-| Benef |        | Abile                         | 1=19  |
-| Benef |        | 1 resistenze (fuoco)          | 1=20  |
+| Tipo  | Classe | Nome                                           | Costo |
+| ----- | ------ | ---------------------------------------------- | ----- |
+| Tal   | gen    | [[Competenza in un’arma (arma)]] ( _Randello_) | 5     |
+| Stile | alb 1  | [[Furtivo in critico]]                         | 4=9   |
+|       | alb 3  | [[Preparare il critico]]                       | 4=13  |
+| Benef |        | [[Vigore]] (1pf)                               | 1=14  |
+| Benef |        | [[Tempra Forte]] (+1 ts T)                     | 1=15  |
+| Benef |        | [[Volontà ferrea]] (+1 ts V)                   | 1=16  |
+| Benef |        | [[Strumento arma]]                             | 1=17  |
+| Benef |        | [[Riflessi agili]] (+1 ts R)                   | 1=18  |
+| Benef |        | [[Abile]]                                      | 1=19  |
+| Benef |        | [[Resistenza al fuoco]]                        | 1=20  |
 
 
 ## 2° Livello - Vagabondo
@@ -47,57 +47,62 @@ Abilità: Costituzione, Saggezza, Destrezza
 Abilità: Costituzione, Forza, Carisma
 **Difese:** Riflessi, Tempra
 
-| Tipo  | Classe | Nome                                       | Costo |
-| ----- | ------ | ------------------------------------------ | ----- |
-| Tal   | gen 1  | ==Armatura esotica (cuoio borchiato)==     | 5     |
-| Tal   | Vag 2  | Eludere                                    | 5=10  |
-| Tal   | Vag 2  | Movimento veloce                           | 5=15  |
-|       |        |                                            |       |
-| Benef |        | Strumento arma                             | 1     |
-| Benef |        | Mantenere la concentrazione (+5 mant conc) | 1     |
+| Tipo  | Classe | Nome                                                     | Costo |
+| ----- | ------ | -------------------------------------------------------- | ----- |
+| Tal   | gen 1  | ==Armatura esotica (cuoio borchiato)==                   | 5     |
+| Tal   | vag 2  | [[Eludere]]                                              | 5=10  |
+| Tal   | vag 1  | [[Movimento veloce]]                                     | 5=15  |
+| Benef |        | [[Attacco secondario (livello)\|Attacco secondario (1)]] | 1=16  |
+| Benef |        | [[Strumento arma]]                                       | 1=17  |
+| Benef |        | [[Colpo di reni]]                                        | 1=18  |
+| Benef |        | [[Resistenza al freddo]]                                 | 1=19  |
+| Benef |        | [[Resistenza al fulmine]]                                | 1=20  |
 ## 3° Livello - Mago 
 3 PF, 
 Abilità: Costituzione, Intelligenza, Saggezza
 **Difese:** Volontà, Tempra
 
-| Tipo  |     | Nome                   | Costo |
-| ----- | --- | ---------------------- | ----- |
-| Slot  |     | 4x1                    | 12    |
-| Spell | 1   | Lingua sciolta         | 1     |
-|       | 1   | Armatura magica        | 1     |
-|       | 1   | Frastornare            | 1     |
-|       | 1   | Sfera di forza minore  | 1     |
-|       | 1   | Ipnosi                 | 1     |
-|       | 1   | Cambiare sembianze     | 1     |
-|       | 1   | Suono Fantasma         | 1     |
-| Ben   |     | Attacco secondario (1) | 1     |
+| Tipo  |     | Nome                                                     | Costo |
+| ----- | --- | -------------------------------------------------------- | ----- |
+| Slot  |     | 4x1                                                      | 12    |
+| Spell | 1   | [[Linguasciolta]]                                        | 1     |
+|       | 1   | [[Frastornare]]                                          | 1     |
+|       | 1   | [[Sfera di forza minore]]                                | 1     |
+|       | 1   | [[Ipnosi]]                                               | 1     |
+|       | 1   | [[Suono Fantasma]]                                       | 1     |
+|       | 1   | [[Cambiare sembianze]]                                   | 1     |
+|       | 1   | [[Scassinare]]                                           | 1     |
+| Benef |     | [[Attacco secondario (livello)\|Attacco secondario (2)]] | 1=20  |
+
 ## 4° Livello - Bardo 1
 4 PF, 
 Abilità: Costituzione, Carisma, Intelligenza
 **Difese:** Riflessi, Volontà
 
-| Tipo  |         | Nome                   | Costo |
-| ----- | ------- | ---------------------- | ----- |
-| Tal   | Bardo 1 | Ispirazione            | 5     |
-| Ben   |         | Attacco secondario (2) | 1     |
-| Stile | alb 3   | Scelta azzardata       | 4     |
-| Slot  |         | 2x2                    | 6     |
-| Spell | 2°      | Spruzzo colorato       | 1     |
-| Spell | 2°      | Raggio di Stupidità    | 1     |
-| Spell | 2°      | legame                 | 1     |
-| Spell | 2°      | Sonno                  | 1     |
-|       |         |                        |       |
+| Tipo  |         | Nome                                                     | Costo |
+| ----- | ------- | -------------------------------------------------------- | ----- |
+| Tal   | Bardo 1 | [[Ispirazione]]                                          | 5     |
+| Benef |         | [[Attacco secondario (livello)\|Attacco secondario (3)]] | 1=6   |
+| Stile | alb 3   | [[Scelta azzardata]]                                     | 4=10  |
+| Slot  |         | 2x2                                                      | 6=16  |
+| Spell | 2°      | [[Spruzzo colorato]]                                     | 1=17  |
+| Spell | 2°      | [[Raggio di stupidità]]                                  | 1=18  |
+| Spell | 2°      | [[Legame]]                                               | 1=19  |
+| Spell | 2°      | [[Sonno]]                                                | 1=20  |
+|       |         |                                                          |       |
 ## 5° Livello - Bardo 2
 4 PF, 
-Abilità: Costituzione, , 
+Abilità: Costituzione, Saggezza ,Destrezza 
 **Difese:** Riflessi, Volontà
 
-| Tipo  |         | Nome                          | Costo |
-| ----- | ------- | ----------------------------- | ----- |
-| Tal   | Bardo 2 |                               | 5     |
-| Ben   |         | Attacco secondario (3)        | 1     |
-| Stile | alb 1   | Furtivo in critico migliorato | 4     |
-| Slot  | 3°      |                               | 3     |
-| spell | 3°      |                               | 1     |
-| Stile | alb 3   | Critico sul sopraffatto       | 4     |
-|       |         |                               | 19    |
+| Tipo  |         | Nome                                                     | Costo |
+| ----- | ------- | -------------------------------------------------------- | ----- |
+| Tal   | Bardo 2 | [[Talento bardico]]-> [[Arte della strada]]              | 5     |
+| Benef |         | [[Attacco secondario (livello)\|Attacco secondario (4)]] | 1=6   |
+| Stile | alb 1   | [[Furtivo in critico migliorato]]                        | 4=10  |
+| Stile | alb 3   | [[Critico sul sopraffatto]]                              | 4=14  |
+| Slot  | 3°      | 3x1                                                      | 3=17  |
+| Spell | 3°      | [[Onda disorientante]]                                   | 1=18  |
+| Spell | 1       | [[Cambiare sembianze]]                                   | 1=19  |
+| Spell | 3       | [[Immagine minore]]                                      | 1=20  |
+
