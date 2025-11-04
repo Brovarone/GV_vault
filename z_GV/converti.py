@@ -14,6 +14,9 @@ OUTPUT_BASE_DIR = r"C:\Users\Cristiano\Documents\Obsidian\D&D\D&D\z_GV"
 
 # Mappa dei file e degli URL da scaricare
 URLS = {
+    "Condizioni.html":"https://www.grajaversion.org/Rules/Conditions",
+}
+URLS_ok = {
     "Razze_Classi.html": "http://www.grajaversion.org/Home/RaceClasses",
     "Talenti.html": "http://www.grajaversion.org/Features",
     "Benefici.html": "http://www.grajaversion.org/Features/Benefits",
@@ -21,6 +24,7 @@ URLS = {
     "Incantesimi.html": "http://www.grajaversion.org/Powers/Spells",
     "Preghiere.html": "http://www.grajaversion.org/Powers/Prayers",
     "Discipline.html": "http://www.grajaversion.org/Powers/Disciplines",
+    "Condizioni.html":"https://www.grajaversion.org/Rules/Conditions",
 }
 
 # Mappa per correggere il tipo di elemento
@@ -30,7 +34,8 @@ ITEM_TYPE_MAP = {
     "Stili": "Stile", 
     "Incantesimi": "Incantesimo", 
     "Preghiere": "Preghiera", 
-    "Discipline": "Disciplina"
+    "Discipline": "Disciplina",
+    "Condizioni": "Condizione"
 }
 
 # --- MAPPATURA CLASSI (NUOVA) ---
@@ -119,6 +124,61 @@ def clean_and_convert(html_content):
     markdown_content = re.sub(r'#+\s*descrizione\s*', '', markdown_content, flags=re.IGNORECASE).strip()
     
     return markdown_content
+
+def clean_and_convert_list(html_content):
+    # Esempio molto basilare: estrae solo il testo e lo formatta come lista se trova <ul>
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # Se è una lista (Condizioni/Benefici), la formattiamo come lista Markdown
+    list_items = soup.find_all('li')
+    if list_items:
+        # Aggiungo un piccolo spazio in più per la leggibilità del Markdown
+        md_list = "\n" + "\n".join([f"* {li.text.strip()}" for li in list_items])
+        return md_list
+    
+    # Altrimenti, restituisci solo il testo
+    return soup.get_text().strip()
+
+def link_conditions(text: str, conditions_list: list) -> str:
+    """
+    Sostituisce le Condizioni note nel testo con link interni di Obsidian (MD).
+    Gestisce i modificatori numerici (es. Scosso X) lasciandoli fuori dal link.
+    """
+    
+    # Ordina la lista per lunghezza (dal più lungo al più corto) per evitare match parziali.
+    conditions_list.sort(key=len, reverse=True)
+    
+    valid_conditions = [re.escape(c) for c in conditions_list if c]
+    if not valid_conditions:
+        return text
+
+    conditions_pattern = '|'.join(valid_conditions)
+    
+    # La regex cerca:
+    # 1. \b(conditions_pattern)\b: il nome della condizione come parola intera.
+    # 2. \s*(\d*): uno spazio opzionale seguito da un numero opzionale (il modificatore X).
+    # Reimplemento la regex per gestire meglio le condizioni come "Scosso X" o "Rallentato 2".
+    # Usiamo un lookahead negativo `(?! da fonte)` per prevenire la cattura di nomi non voluti,
+    # anche se l'estrazione in get_condition_names dovrebbe aver risolto il problema della fonte.
+    pattern = re.compile(r'\b(' + conditions_pattern + r')\s*(\d*)\b', re.IGNORECASE)
+    
+    def replacer(match):
+        # match.group(1) è la Condizione (es. "Scosso")
+        # match.group(2) è il numero (es. "X" o "2" o stringa vuota)
+        name_part = match.group(1)
+        mod_part = match.group(2)
+        
+        # Capitalizza il nome della Condizione (es. "scosso" -> "Scosso")
+        # per il link [[Nome]]
+        linked_name = name_part[0].upper() + name_part[1:]
+        
+        # Crea il link, mantenendo il modificatore dopo il link se presente
+        # Esempio: "Scosso 2" -> "[[Scosso]] 2"
+        return f"[[{linked_name}]] {mod_part}" if mod_part else f"[[{linked_name}]]"
+
+    text = pattern.sub(replacer, text)
+        
+    return text
 
 # ----------------------------------------------------------------------
 # FASE 3: LOGICA DI ESTRAZIONE DA TABELLA (per i Poteri e come Fallback)
@@ -575,6 +635,125 @@ cost: {cost}
 
     return processed_count
 
+def process_conditions(soup, base_output_folder, base_name="Condizioni"):
+    """Gestisce l'estrazione per Condizioni.html (Struttura Accordion)."""
+    
+    # PRIMO PASSO: ESTRE TUTTI I NOMI DELLE CONDIZIONI (es. "Dominato" invece di "Dominato (da fonte)")
+    conditions_to_link = get_condition_names(soup)
+    if not conditions_to_link:
+        print("AVVISO: Nessuna condizione trovata nella pre-passata.")
+    
+    accordion_container = soup.find('div', class_='panel-group', id='accordion-3')
+    if not accordion_container:
+        print(f"ERRORE: Contenitore principale {base_name} non trovato.")
+        return 0
+
+    # Benefici: ogni group_element è una categoria (Generali, Razza A, Classe B)
+    group_elements = accordion_container.find_all('div', class_='panel-default')
+    
+    processed_count = 0
+    item_type = ITEM_TYPE_MAP[base_name]
+
+    for group_element in group_elements:
+        
+        # 1. Estrazione del NOME (dal titolo dell'Accordion)
+        group_tag = group_element.find('h4', class_='panel-title')
+        name = "Sconosciuto"
+        if group_tag and group_tag.find('a'):
+            # Il nome della Condizione è nel testo del link (es. "Accecato")
+            # Uso split('(') per rimuovere eventuali parentesi, anche se non presenti nel tuo esempio
+            name = group_tag.find('a').text.strip().split('(')[0].strip()
+        
+        # 2. Estrazione del CONTENUTO/DESCRIZIONE (dal panel-body)
+        panel_body_tag = group_element.find('div', class_='panel-collapse')
+        if not panel_body_tag: continue # Salta se non c'è il corpo collassabile
+
+        # Trova il corpo visibile del contenuto
+        content_div = panel_body_tag.find('div', class_='panel-body')
+        
+        description_html = ""
+        if content_div:
+            # Per le Condizioni, il contenuto rilevante è la lista <ul>
+            list_tag = content_div.find('ul', class_='list-icons')
+            
+            if list_tag:
+                description_html = str(list_tag)
+            else:
+                description_html = "".join(str(c) for c in content_div.contents).strip()
+        
+        description_md = clean_and_convert_list(description_html)
+        
+        # >>> APPLICAZIONE DEI LINK INTERNI DINAMICI <<<
+        description_md_linked = link_conditions(description_md, conditions_to_link)
+        
+        # --- Formattazione Frontmatter ---
+        
+        # Parametri fissi per Condizioni
+        class_name = "Generali"
+        level = "0" # Livello non rilevante per le condizioni
+        cost = "0"  # Costo non rilevante per le condizioni
+        
+        frontmatter_content = f"""type: {item_type}
+class: "{class_name}"
+level: {level}
+cost: {cost}
+"""
+        # Il titolo del blocco di testo è 'Effetti' per chiarezza
+        frontmatter = f"""---
+{frontmatter_content.strip()}
+---
+
+**Effetti della Condizione**
+{description_md_linked}"""
+
+        # --- Salvataggio File ---
+        invalid_chars = r'[<>:"/\\|?*]'
+        file_name = re.sub(invalid_chars, '', f"{name}.md")
+        
+        # Salva i file in una sottocartella chiamata "Condizioni"
+        os.makedirs(base_output_folder, exist_ok=True)
+        
+        output_file_path = os.path.join(base_output_folder, file_name)
+        
+        try:
+            with open(output_file_path, 'w', encoding='utf8') as out_f:
+                out_f.write(frontmatter)
+            processed_count += 1
+        except Exception as e:
+            print(f"ERRORE: Impossibile salvare il file {file_name} in {base_output_folder}. {e}")
+
+    return processed_count
+
+def get_condition_names(soup):
+    """
+    Esegue una pre-passata per estrarre tutti i nomi delle Condizioni
+    dall'intestazione dell'accordion.
+    Gestisce i casi come "Dominato (da fonte)" estraendo solo "Dominato".
+    """
+    condition_names = set()
+    accordion_container = soup.find('div', class_='panel-group', id='accordion-3')
+    
+    if not accordion_container:
+        return condition_names
+
+    group_elements = accordion_container.find_all('div', class_='panel-default')
+    
+    for group_element in group_elements:
+        group_tag = group_element.find('h4', class_='panel-title')
+        if group_tag and group_tag.find('a'):
+            name_raw = group_tag.find('a').text.strip()
+            
+            # Pulizia: prende solo il nome principale prima di eventuali parentesi
+            name = name_raw.split('(')[0].strip()
+            
+            # Pulizia per rimuovere spazi aggiuntivi o punteggiatura finale
+            name = name.strip() 
+            
+            if name:
+                condition_names.add(name)
+                
+    return list(condition_names)
+
 def process_simple_page(soup, output_folder, base_name):
     """Gestisce l'estrazione per file HTML semplici o come fallback (Razze_Classi)."""
     
@@ -629,7 +808,7 @@ def process_file(html_file_path, output_base_dir):
         processed_count = process_box_structure(soup, base_output_folder, base_name, fixed_cost="4")
 
     # 3. Gestione Benefici (Struttura Accordion)
-    elif base_name == "Benefici":
+    elif base_name in ["Benefici"]:
         processed_count = process_benefits(soup, base_output_folder, base_name)
 
     # 4. Gestione Poteri/Stili/Incantesimi (Struttura Tabella)
@@ -639,7 +818,11 @@ def process_file(html_file_path, output_base_dir):
     # 5. Gestione Pagine Semplici
     elif base_name in ["Razze_Classi"]:
         processed_count = process_simple_page(soup, base_output_folder, base_name)
-        
+    
+    # 6. Gestione Condizioni (Struttura Accordion)
+    elif base_name in [ "Condizioni"]:
+        processed_count = process_conditions(soup, base_output_folder, base_name)
+
     else:
         print(f"AVVISO: File {base_name} non mappato ad una procedura specifica.")
         return
@@ -712,7 +895,7 @@ if __name__ == "__main__":
     os.makedirs(OUTPUT_BASE_DIR, exist_ok=True)
     
     # 1. Esegue il download utilizzando Curl
-    #download_files_with_curl(URLS, INPUT_DIR)
+    # download_files_with_curl(URLS, INPUT_DIR)
     
     # 2. Esegue la conversione in batch
     batch_process_html(INPUT_DIR, OUTPUT_BASE_DIR)

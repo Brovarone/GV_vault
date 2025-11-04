@@ -1,34 +1,34 @@
 ---
 fileClass: PNG
 type: PNG
-razza: Gigante
-alias:
+razza: Umano
+alias: il Cremisi
 condizione: Vivo
 relazione_con_pg:
-relazione_con_party:
-relazione: "[[Grumal]]"
-sesso: Femmina
+relazione_con_party: Amichevole
+relazione:
+sesso: Maschio
 occupazione:
-location:
-classe_sociale: Schiava
+location: "[[Porto Grigio]]"
+classe_sociale:
 picture: ""
 organizzazione:
-  - "[[Ciurma di Rolan]]"
 class:
+  - Mago
 ---
 
 ## Aspetto e Impressioni Iniziali
-* **Aspetto:** Gigantessa
+* **Aspetto:**  Vecchio
 * **Voce:** 
 * **Tratti di Personalità (Come percepiti):** 
 
 ## Storia
 *(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
-Ci ha attaccato mentre navigavamo, ha perso e ora e' la schiava di [[Grumal]]
+
 ## Interazioni 
 *(Cosa vuole da me / Cosa voglio io)*
 * 
 ## Quest
-* 
+* [[Main Quest]]
 ## Note Aggiuntive
 * 

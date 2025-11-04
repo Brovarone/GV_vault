@@ -1,4 +1,5 @@
 ---
+fileClass: PNG
 razza: Mezzonano
 alias: 
 condizione: Vivo

@@ -47,16 +47,16 @@ Abilità: Costituzione, Saggezza, Destrezza
 Abilità: Costituzione, Forza, Carisma
 **Difese:** Riflessi, Tempra
 
-| Tipo  | Classe | Nome                                                     | Costo |
-| ----- | ------ | -------------------------------------------------------- | ----- |
-| Tal   | gen 1  | ==Armatura esotica (cuoio borchiato)==                   | 5     |
-| Tal   | vag 2  | [[Eludere]]                                              | 5=10  |
-| Tal   | vag 1  | [[Movimento veloce]]                                     | 5=15  |
-| Benef |        | [[Attacco secondario (livello)\|Attacco secondario (1)]] | 1=16  |
-| Benef |        | [[Strumento arma]]                                       | 1=17  |
-| Benef |        | [[Colpo di reni]]                                        | 1=18  |
-| Benef |        | [[Resistenza al freddo]]                                 | 1=19  |
-| Benef |        | [[Resistenza al fulmine]]                                | 1=20  |
+| Tipo  | Classe | Nome                                                       | Costo |
+| ----- | ------ | ---------------------------------------------------------- | ----- |
+| Tal   | gen 1  | [[Addestramento in un’armatura esotica]] (cuoio borchiato) | 5     |
+| Tal   | vag 2  | [[Eludere]]                                                | 5=10  |
+| Tal   | vag 1  | [[Movimento veloce]]                                       | 5=15  |
+| Benef |        | [[Attacco secondario (livello)\|Attacco secondario (1)]]   | 1=16  |
+| Benef |        | [[Superare il trauma]]                                     | 1=17  |
+| Benef |        | [[Colpo di reni]]                                          | 1=18  |
+| Benef |        | [[Resistenza al freddo]]                                   | 1=19  |
+| Benef |        | [[Resistenza al fulmine]]                                  | 1=20  |
 ## 3° Livello - Mago 
 3 PF, 
 Abilità: Costituzione, Intelligenza, Saggezza
@@ -64,7 +64,7 @@ Abilità: Costituzione, Intelligenza, Saggezza
 
 | Tipo  |     | Nome                                                     | Costo |
 | ----- | --- | -------------------------------------------------------- | ----- |
-| Slot  |     | 4x1                                                      | 12    |
+| Slot  |     | 4x 1° Livello                                            | 12    |
 | Spell | 1   | [[Linguasciolta]]                                        | 1     |
 |       | 1   | [[Frastornare]]                                          | 1     |
 |       | 1   | [[Sfera di forza minore]]                                | 1     |
@@ -84,7 +84,7 @@ Abilità: Costituzione, Carisma, Intelligenza
 | Tal   | Bardo 1 | [[Ispirazione]]                                          | 5     |
 | Benef |         | [[Attacco secondario (livello)\|Attacco secondario (3)]] | 1=6   |
 | Stile | alb 3   | [[Scelta azzardata]]                                     | 4=10  |
-| Slot  |         | 2x2                                                      | 6=16  |
+| Slot  |         | 2x  2° Livello                                           | 6=16  |
 | Spell | 2°      | [[Spruzzo colorato]]                                     | 1=17  |
 | Spell | 2°      | [[Raggio di stupidità]]                                  | 1=18  |
 | Spell | 2°      | [[Legame]]                                               | 1=19  |
@@ -101,8 +101,8 @@ Abilità: Costituzione, Saggezza ,Destrezza
 | Benef |         | [[Attacco secondario (livello)\|Attacco secondario (4)]] | 1=6   |
 | Stile | alb 1   | [[Furtivo in critico migliorato]]                        | 4=10  |
 | Stile | alb 3   | [[Critico sul sopraffatto]]                              | 4=14  |
-| Slot  | 3°      | 3x1                                                      | 3=17  |
+| Slot  | 3°      | 1x  3° Livello                                           | 3=17  |
 | Spell | 3°      | [[Onda disorientante]]                                   | 1=18  |
-| Spell | 1       | [[Cambiare sembianze]]                                   | 1=19  |
+| Spell | 3°      | [[Teletrasporto minore]]                                 | 1=19  |
 | Spell | 3       | [[Immagine minore]]                                      | 1=20  |
 

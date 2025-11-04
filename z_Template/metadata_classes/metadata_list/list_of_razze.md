@@ -26,3 +26,4 @@ Svinfneblin (Gnomo delle Profondità)
 Mostro
 Sconosciuta
 Mezzonano
+Folletto
