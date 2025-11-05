@@ -1,19 +1,19 @@
 ---
 fileClass: PNG
 type: PNG
-razza: Nano
+razza: Umano
 alias: 
 condizione: Vivo
 relazione_con_pg: 
-relazione_con_party: 
+relazione_con_party: Ostile
 relazione: 
 sesso: Maschio
 occupazione: 
-location: ["[[Kaz Dum]]"]
+location: 
 classe_sociale: 
 picture: ""
-organizzazione: 
-class: 
+organizzazione: ["[[Ciurma di Rolan]]"]
+class: Mago
 ---
 
 ## Aspetto e Impressioni Iniziali

@@ -2,18 +2,18 @@
 fileClass: PNG
 type: PNG
 razza: Nano
-alias: 
+alias:
 condizione: Vivo
-relazione_con_pg: 
-relazione_con_party: 
-relazione: 
+relazione_con_pg:
+relazione_con_party:
+relazione:
 sesso: Maschio
-occupazione: 
-location: ["[[Kaz Dum]]"]
-classe_sociale: 
+occupazione: Referente al porto
+location: "[[Kaz Dum]]"
+classe_sociale:
 picture: ""
-organizzazione: 
-class: 
+organizzazione:
+class:
 ---
 
 ## Aspetto e Impressioni Iniziali

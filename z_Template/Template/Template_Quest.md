@@ -6,30 +6,22 @@ type: Quest
 
 > **Obiettivo Principale:** 
 
-| Proprietà | Valore |
-| :--- | :--- |
-| **Datore di Lavoro** | [[$= this.datore]] |
-| **Luogo di Partenza** | [[$= this.location]] |
-| **Ricompensa Promessa** | **$= this.ricompensa** |
-| **Stato Attuale** | **$= this.stato** | 
-| **Priorità** | **$= this.priorita** |
-
+| Proprietà               | Valore                       |     |
+| :---------------------- | :--------------------------- | --- |
+| **Datore di Lavoro**    | `$= dv.current().datore`     |     |
+| **Luogo di Partenza**   | `$= dv.current().location`   |     |
+| **Ricompensa Promessa** | `$= dv.current().ricompensa` |     |
+| **Stato Attuale**       | `$= dv.current().stato`      |     |
+| **Priorità**            | `$= dv.current.priorita`     |     |
 ## Passo Passo (Sotto-obiettivi)
-*Utilizza le checkboxes per segnare i progressi.*
-
 ### Fase 1: Investigazione
 - [ ] 
-- [ ] 
-
 ### Fase 2: Azione
 - [ ] 
-- [ ] 
-
 ### Fase 3: Conclusione
 - [ ] 
 
 ---
-
 ## Note e Piste
 
 * **Connessioni:** 

@@ -5,11 +5,13 @@ razza: Nano
 condizione: Vivo
 alias:
 relazione_con_pg:
-relazione_con_party:
+relazione_con_party: Amichevole
 relazione:
 sesso: Maschio
 occupazione: Ambasciatore Diplomatico
-location: ["[[Korrak]]", "[[Myrth]]"]
+location:
+  - "[[Korrak]]"
+  - "[[Myrth]]"
 classe_sociale:
 picture: ""
 organizzazione:

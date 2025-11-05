@@ -11,36 +11,35 @@ stato: In corso
 ---
 # Quest: Baule ai nani
 
-| Proprietà               | Valore                               |     |
-| :---------------------- | :----------------------------------- | --- |
-| **Datore di Lavoro**    | [[$= dv.current().datore]] |     |
-| **Luogo di Partenza**   | [[$= this.location]]           |     |
-| **Ricompensa Promessa** | **$= this.ricompensa**               |     |
-| **Stato Attuale**       | **$= this.stato**                    |     |
-| **Priorità**            | **$= this.priorita**                 |     |
+> **Obiettivo Principale:**  Riportare un baule a [[Kaz Dum]]  e consegnarlo a [[Grumvir]]
+
+| Proprietà               | Valore                       |     |
+| :---------------------- | :--------------------------- | --- |
+| **Datore di Lavoro**    | `$= dv.current().datore`     |     |
+| **Luogo di Partenza**   | `$= dv.current().location`   |     |
+| **Ricompensa Promessa** | `$= dv.current().ricompensa` |     |
+| **Stato Attuale**       | `$= dv.current().stato`      |     |
+| **Priorità**            | `$= dv.current.priorita`     |     |
 
 ---
-## Passo Passo (Sotto-obiettivi)
-*Utilizza le checkboxes per segnare i progressi.*
-
+## ## Passo Passo (Sotto-obiettivi)
 ### Fase 1: Investigazione
-- [ ] 
 - [ ] 
 
 ### Fase 2: Azione
-- [ ] 
+- [x] Navigare fino a [[Kaz Dum]]
 - [ ] 
 
 ### Fase 3: Conclusione
-- [ ] Ritorna dal [[{{datore_di_lavoro}}]] per riscuotere la {{ricompensa}}.
+- [ ] Consegnare il Baule
 
 ---
 
 ## Note e Piste
 
-* **Connessioni:** Questa quest potrebbe essere collegata a [[Storia - Rivalità tra Gilde]].
-* **Ostacoli:** Un drago è stato avvistato vicino all'ultima posizione del Pugnale.
-* **Risorse:** Ho bisogno di un veleno per addormentare i cani da guardia.
+* **Connessioni:** 
+* **Ostacoli:** 
+* **Risorse:** 
 
 ## Riassunto (A Fine Quest)
 *Quando la quest è completata o fallita, inserisci qui un breve resoconto.*
