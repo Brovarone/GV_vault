@@ -15,6 +15,7 @@ classe_sociale:
 picture: ""
 organizzazione:
   - "[[Consiglio dell' arcipelago]]"
+class: 
 ---
 Capo del Consiglio dell'arcipelago
 
