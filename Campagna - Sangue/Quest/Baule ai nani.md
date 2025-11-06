@@ -1,13 +1,13 @@
 ---
 alias: Baule ai Nani
 priorita: bassa
-ricompensa: Ci lasciano navigare nelle acque territoriali dei Nani
+ricompensa: Ci lasciano navigare nelle acque territoriali dei Nani?
 location:
   - "[[Korrak]]"
 datore: "[[Baldric]]"
 scadenza: Nessuna
 type: Quest
-stato: In corso
+stato: In attesa di ricompensa
 ---
 # Quest: Baule ai nani
 
@@ -31,7 +31,9 @@ stato: In corso
 - [ ] 
 
 ### Fase 3: Conclusione
-- [ ] Consegnare il Baule
+- [x] Consegnare il Baule
+- [x] consegnato a Singurd
+- [ ] tornare da [[Borin occhio fino]] per il lasciapassare 
 
 ---
 

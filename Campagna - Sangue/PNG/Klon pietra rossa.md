@@ -1,15 +1,15 @@
 ---
 fileClass: PNG
 type: PNG
-razza: Nano
+razza:
 alias:
 condizione: Vivo
 relazione_con_pg:
 relazione_con_party:
 relazione:
 sesso: Maschio
-occupazione: Capetto mercato sotterraneo al porto
-location: "[[Kaz Dum]]"
+occupazione: Capo della nave da battaglia
+location:
 classe_sociale:
 picture: ""
 organizzazione:
@@ -17,18 +17,17 @@ class:
 ---
 
 ## Aspetto e Impressioni Iniziali
-* **Aspetto:** Cicatrice sul volto
+* **Aspetto:** 
 * **Voce:** 
 * **Tratti di Personalità (Come percepiti):** 
-Personaggio losco, non sembra per nulla ben visto 
 
 ## Storia
 *(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
-
+Membro del clan Pietra Rossa
 ## Interazioni 
 *(Cosa vuole da me / Cosa voglio io)*
- - [x] Devo andare alle 22 in una grotta sotto la piazza a consegnare il baule
+* 
 ## Quest
-- [[Baule ai nani]]
+* 
 ## Note Aggiuntive
 * 

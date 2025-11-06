@@ -8,7 +8,7 @@ relazione_con_pg:
 relazione_con_party:
 relazione:
 sesso: Maschio
-occupazione: Capetto mercato sotterraneo al porto
+occupazione: Responsabile del porto
 location: "[[Kaz Dum]]"
 classe_sociale:
 picture: ""
@@ -17,18 +17,17 @@ class:
 ---
 
 ## Aspetto e Impressioni Iniziali
-* **Aspetto:** Cicatrice sul volto
+* **Aspetto:** 
 * **Voce:** 
 * **Tratti di Personalità (Come percepiti):** 
-Personaggio losco, non sembra per nulla ben visto 
 
 ## Storia
 *(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
 
 ## Interazioni 
 *(Cosa vuole da me / Cosa voglio io)*
- - [x] Devo andare alle 22 in una grotta sotto la piazza a consegnare il baule
+* 
 ## Quest
-- [[Baule ai nani]]
+* 
 ## Note Aggiuntive
 * 

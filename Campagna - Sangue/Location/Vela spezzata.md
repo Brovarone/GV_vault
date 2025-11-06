@@ -1,25 +1,25 @@
 ---
-poi:
-parent:
-tipo_location: Isola
-type: Location
 fileClass: location
+type: Location
+poi:
+parent: ["[[Kaz Dum]]"]
+tipo_location: Locanda
+picture: ""
 ---
-Isola vulcanica dei nani
 
 ## Impressioni Generali
-* 
+* La locandiera è una nana.
+* Catapecchia sul molo.
 
 ## Punti di Interesse (POI)
-| POI                 | Riferimento PNG/Note                                                |
-| :------------------ | :------------------------------------------------------------------ |
-| Manifesti ricercati | [[Ania]], [[Salis]], [[Grikka]], fex. Non c'è [[Rolan Duskwhisper]] |
+| POI          | Riferimento PNG/Note                |
+| :----------- | :---------------------------------- |
+| Goblin gobbo | Lo aveva corrotto Grumal con una mo |
 
 ## Eventi e Scoperte
-- C'è razzismo sulle altre razze non nani
-- Ci sono diverse famiglie di clan
+*
 
-PNG
+### PNG
 ```dataviewjs
 // Usa per debugging
 //dv.header(4, "Valore Filtro Link: " + dv.current().file.name);

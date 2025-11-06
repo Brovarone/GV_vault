@@ -3,7 +3,7 @@ fileClass: location
 type: Location
 poi:
 parent:
-tipo_location: Isola
+tipo_location: Atollo
 picture: ""
 ---
 

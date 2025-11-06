@@ -35,8 +35,9 @@ fields:
         "1": Proposta
         "2": In corso
         "3": Sospesa
-        "4": Completata
-        "5": Annullata
+        "4": In attesa di ricompensa
+        "5": Completata
+        "6": Annullata
     path: ""
     id: vvYL42
   - name: priorita
@@ -49,7 +50,7 @@ fields:
         "3": Bassa
     path: ""
     id: SID9zb
-version: "2.42"
+version: "2.43"
 limit: 20
 mapWithTag: false
 icon: scroll-text

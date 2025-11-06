@@ -31,4 +31,4 @@ organizzazione:
 ## Quest
 * 
 ## Note Aggiuntive
-* 
+* Fratello di [[siglias]]

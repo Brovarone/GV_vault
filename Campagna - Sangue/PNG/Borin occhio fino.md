@@ -4,31 +4,33 @@ type: PNG
 razza: Nano
 alias:
 condizione: Vivo
-relazione_con_pg:
+relazione_con_pg: Amichevole
 relazione_con_party:
 relazione:
 sesso: Maschio
-occupazione: Capetto mercato sotterraneo al porto
+occupazione: Capetto mercato superiore
 location: "[[Kaz Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:
 class:
+  - Nano
 ---
 
 ## Aspetto e Impressioni Iniziali
-* **Aspetto:** Cicatrice sul volto
+* **Aspetto:** 
 * **Voce:** 
 * **Tratti di Personalità (Come percepiti):** 
-Personaggio losco, non sembra per nulla ben visto 
 
 ## Storia
 *(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
 
 ## Interazioni 
 *(Cosa vuole da me / Cosa voglio io)*
- - [x] Devo andare alle 22 in una grotta sotto la piazza a consegnare il baule
+* Mi racconta una storia sulle caverne che passano sotto la montagna e di un gruppo di nani che sono passati da qua qualche anno fa e di cui si sono perse le tracce (Rossaforgia?)
 ## Quest
-- [[Baule ai nani]]
+* Ho commissionato l'acquisto del materiale per riparare la nave
+* Ho un accordo per una cena con uno dei clan
+* Devo tornare da lui per il lascia passare 
 ## Note Aggiuntive
 * 
