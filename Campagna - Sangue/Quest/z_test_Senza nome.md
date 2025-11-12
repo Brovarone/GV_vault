@@ -90,3 +90,36 @@ dv.list(
 *Quando la quest è completata o fallita, inserisci qui un breve resoconto.*
 
 
+>[!note]- Note  
+> TEXT
+
+> [!abstract]+ Abstract  
+> TEXT
+
+> [!info]- Info  
+> TEXT
+
+> [!tip]- Tip  
+> TEXT
+
+> [!success]- Success  
+> TEXT
+
+> [!question]- Question  
+> TEXT
+
+> [!warning]- Warning  
+> TEXT
+
+> [!failure]- Failure  
+> TEXT
+
+> [!danger]- Danger  
+> TEXT
+
+> [!bug]- Bug  
+> TEXT
+
+> [!example]- Example  
+> TEXT
+

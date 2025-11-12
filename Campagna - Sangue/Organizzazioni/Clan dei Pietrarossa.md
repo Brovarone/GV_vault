@@ -1,5 +1,4 @@
 ---
-fileClass:
 type: Organizzazione
 location: "[[Kaz Dum]]"
 ---
