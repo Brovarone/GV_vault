@@ -12,3 +12,6 @@ type: Quest
 
 
 Recuperare il [[Diamante del demone]]  nell'isola di [[Zarates]].
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

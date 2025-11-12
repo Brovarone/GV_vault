@@ -1,18 +1,35 @@
 ---
 fileClass: PNG
 razza: Mezzonano
-alias: 
+alias:
 condizione: Vivo
-organizzazione: 
-relazione_con_pg: 
-relazione_con_party: 
-relazione: 
+organizzazione:
+relazione_con_pg:
+relazione_con_party:
+relazione:
 sesso: Maschio
 occupazione: Criminale
 type: PNG
-classe_sociale: 
+classe_sociale:
 picture: ""
-location: 
+location:
 ---
 
 Guida la [[Freccia nera]] 
+
+## Aspetto e Impressioni Iniziali
+* **Aspetto:** 
+* **Voce:** 
+* **Tratti di Personalità (Come percepiti):** 
+
+## Storia
+*(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
+
+## Interazioni 
+*(Cosa vuole da me / Cosa voglio io)*
+* 
+## Quest
+*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

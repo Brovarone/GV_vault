@@ -13,3 +13,6 @@ type: PG
 ---
 ### Vard
 Avvoltoio 
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

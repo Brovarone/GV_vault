@@ -11,3 +11,6 @@ class: [Vagabondo]
 giocatore: Marco
 type: PG
 ---
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

@@ -11,3 +11,6 @@ organizzazione:
 class: [Mago]
 giocatore: Max
 ---
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

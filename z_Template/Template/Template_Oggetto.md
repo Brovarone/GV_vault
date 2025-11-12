@@ -5,3 +5,7 @@ subtype:
 collegamenti:
 location:
 ---
+
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

@@ -11,3 +11,6 @@ class: [Guerriero]
 giocatore: Bacco
 type: PG
 ---
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

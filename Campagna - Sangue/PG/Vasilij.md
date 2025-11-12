@@ -20,3 +20,7 @@ type: PG
  - Scialuppa
 ### Sulla nave
 - 50 mo
+
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

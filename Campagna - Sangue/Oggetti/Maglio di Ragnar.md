@@ -6,3 +6,7 @@ collegamenti:
   - "[[Ragnar]]"
 location:
 ---
+
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

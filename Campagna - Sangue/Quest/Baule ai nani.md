@@ -45,3 +45,6 @@ stato: In attesa di ricompensa
 
 ## Riassunto (A Fine Quest)
 *Quando la quest è completata o fallita, inserisci qui un breve resoconto.*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

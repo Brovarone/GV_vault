@@ -29,6 +29,7 @@ Ci ha attaccato mentre navigavamo, ha perso e ora e' la schiava di [[Grumal]]
 *(Cosa vuole da me / Cosa voglio io)*
 * 
 ## Quest
-* 
-## Note Aggiuntive
-* 
+*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

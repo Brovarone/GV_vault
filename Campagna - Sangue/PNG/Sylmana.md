@@ -1,8 +1,4 @@
 ---
-tags:
-  - png
-  - kordak
-  - consiglio-arcipelago
 fileClass: PNG
 type: PNG
 razza: 
@@ -34,6 +30,7 @@ Ha 2 ancelle umane Lira e Cora.
 *(Cosa vuole da me / Cosa voglio io)*
 * 
 ## Quest
-* 
-## Note Aggiuntive
-* 
+*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

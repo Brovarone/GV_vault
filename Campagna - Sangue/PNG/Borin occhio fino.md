@@ -32,5 +32,6 @@ class:
 * Ho commissionato l'acquisto del materiale per riparare la nave
 * Ho un accordo per una cena con uno dei clan
 * Devo tornare da lui per il lascia passare 
-## Note Aggiuntive
-* 
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

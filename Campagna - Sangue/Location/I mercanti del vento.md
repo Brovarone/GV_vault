@@ -18,10 +18,13 @@ tipo_location: Emporio
 *
 
 > [!png]- PNG
-![[_Queries#^query-png]]
+![[_Queries#^query-png-location]]
 
 > [!organizzazioni]- Organizzazioni
 ![[_Queries#^query-organizzazioni]]
 
 > [!sublocation]- Sub Location 
 ![[_Queries#^query-sublocation]]
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

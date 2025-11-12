@@ -30,5 +30,6 @@ class:
 * 
 ## Quest
 * [[Main Quest]]
-## Note Aggiuntive
-* 
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

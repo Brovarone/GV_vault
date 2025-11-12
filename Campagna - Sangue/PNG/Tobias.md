@@ -21,7 +21,8 @@ organizzazione:
 * **Aspetto:**  Tipo vecchiotto
 * **Voce:** 
 * **Tratti di Personalità (Come percepiti):** 
-
+* Fratello di [[siglias]]
+* 
 ## Storia
 *(Note su ciò che sai del suo passato, o ciò che ti ha raccontato.)*
 
@@ -29,6 +30,8 @@ organizzazione:
 *(Cosa vuole da me / Cosa voglio io)*
 * 
 ## Quest
-* 
-## Note Aggiuntive
-* Fratello di [[siglias]]
+*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]
+

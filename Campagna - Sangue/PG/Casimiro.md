@@ -11,3 +11,6 @@ organizzazione:
 class: [Sacerdote]
 giocatore: Luca
 ---
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

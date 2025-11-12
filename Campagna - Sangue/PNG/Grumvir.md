@@ -30,5 +30,6 @@ Personaggio losco, non sembra per nulla ben visto
  - [x] Devo andare alle 22 in una grotta sotto la piazza a consegnare il baule
 ## Quest
 - [[Baule ai nani]]
-## Note Aggiuntive
-* 
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]

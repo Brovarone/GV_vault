@@ -28,6 +28,7 @@ Membro del clan Pietra Rossa
 *(Cosa vuole da me / Cosa voglio io)*
 * 
 ## Quest
-* 
-## Note Aggiuntive
-* 
+*
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]
