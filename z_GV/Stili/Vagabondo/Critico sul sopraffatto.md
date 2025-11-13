@@ -10,4 +10,4 @@ prerequisites:
 ---
 
 **Descrizione**
-ottiene un +1 alla minaccia di critico se l'avversario è sopraffatto
+ottiene un +1 alla minaccia di critico se l'avversario è [[Sopraffatto]]

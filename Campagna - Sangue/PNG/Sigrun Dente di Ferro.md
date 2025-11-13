@@ -6,13 +6,15 @@ alias:
 condizione: Vivo
 relazione_con_pg:
 relazione_con_party:
-relazione:
 sesso: Maschio
-occupazione: Re
-location: "[[Kaz Dum]]"
-classe_sociale: Re
+occupazione: Capo dei mercanti
+location:
+  - "[[Kaz Dum]]"
+classe_sociale:
 picture: ""
-organizzazione: ["[[Consiglio di Kaz Dum]]"]
+organizzazione:
+  - "[[Consiglio di Kaz Dum]]"
+relazione:
 class:
 ---
 

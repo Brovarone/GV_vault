@@ -16,14 +16,14 @@ fieldsOrder:
   - UN3fIb
   - rgJ2L6
   - gGbmst
-  - GWm4kT
+  - baathx
   - mAdGIJ
   - oQlCZI
   - qNvg20
   - FPlw0U
   - eIWxUc
   - b7Pb07
-version: "2.159"
+version: "2.168"
 fields:
   - name: razza
     type: Select
@@ -67,11 +67,6 @@ fields:
         "3": Ostile
     path: ""
     id: mAdGIJ
-  - name: relazione
-    type: Input
-    options: {}
-    path: ""
-    id: GWm4kT
   - name: sesso
     type: Select
     options:
@@ -114,4 +109,11 @@ fields:
       dvQueryString: dv.pages('"Campagna - Sangue/Organizzazioni"')
     path: ""
     id: qNvg20
+  - name: relazione
+    type: MultiFile
+    options:
+      dvQueryString: dv.pages('"Campagna - Sangue/PNG"')
+    path: ""
+    id: baathx
 ---
+![[]]

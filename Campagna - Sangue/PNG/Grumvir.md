@@ -6,7 +6,7 @@ alias:
 condizione: Vivo
 relazione_con_pg:
 relazione_con_party:
-relazione:
+relazione: ["[[Borin occhio fino]]"]
 sesso: Maschio
 occupazione: Capetto mercato sotterraneo al porto
 location: "[[Kaz Dum]]"

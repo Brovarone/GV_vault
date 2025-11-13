@@ -2,20 +2,20 @@
 fileClass: PNG
 type: PNG
 razza: Nano
-alias:
+alias: 
 condizione: Vivo
-relazione_con_pg:
-relazione_con_party:
-relazione:
+relazione_con_pg: 
+relazione_con_party: 
 sesso: Maschio
-occupazione: Re
-location: "[[Kaz Dum]]"
-classe_sociale: Re
+occupazione: 
+location: ["[[Kaz Dum]]"]
+classe_sociale: 
 picture: ""
-organizzazione: ["[[Consiglio di Kaz Dum]]"]
-class:
+organizzazione: 
+relazione: ["[[Hilda Fendicielo]]"]
+class: 
 ---
-
+Ci accompagna alle porte del tempio sotto il vulcano
 ## Aspetto e Impressioni Iniziali
 * **Aspetto:** 
 * **Voce:** 
