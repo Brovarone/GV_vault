@@ -4,8 +4,6 @@ type: PNG
 razza: Nano
 alias:
 condizione: Vivo
-relazione_con_pg:
-relazione_con_party:
 relazione: ["[[Borin occhio fino]]"]
 sesso: Maschio
 occupazione: Capetto mercato sotterraneo al porto

@@ -4,8 +4,6 @@ type: PNG
 razza: Gigante
 alias:
 condizione: Vivo
-relazione_con_pg:
-relazione_con_party:
 relazione: "[[Grumal]]"
 sesso: Femmina
 occupazione:

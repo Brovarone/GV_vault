@@ -1,6 +1,11 @@
 ---
 fileClass: location
 type: Location
+poi: 
+parent: 
+tipo_location: 
+picture: ""
+type: 
 ---
 
 ## Impressioni Generali

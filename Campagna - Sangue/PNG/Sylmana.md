@@ -4,8 +4,6 @@ type: PNG
 razza: 
 alias: 
 condizione: Vivo
-relazione_con_pg: 
-relazione_con_party: 
 relazione: 
 sesso: Femmina
 occupazione: Sacerdotessa

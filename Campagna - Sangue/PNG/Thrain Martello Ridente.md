@@ -4,12 +4,11 @@ type: PNG
 razza: Nano
 alias:
 condizione: Vivo
-relazione_con_pg:
-relazione_con_party:
 relazione:
 sesso: Maschio
 occupazione: Re
-location: "[[Kaz Dum]]"
+location: 
+ - "[[Kaz Dum]]"
 classe_sociale: Re
 picture: ""
 organizzazione: ["[[Consiglio di Kaz Dum]]"]

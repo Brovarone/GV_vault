@@ -13,7 +13,7 @@ stato: In attesa di ricompensa
 
 > **Obiettivo Principale:**  Riportare un baule a [[Kaz Dum]]  e consegnarlo a [[Grumvir]]
 
-| Proprietà               | Valore                       |     |
+| Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |
 | **Datore di Lavoro**    | `$= dv.current().datore`     |     |
 | **Luogo di Partenza**   | `$= dv.current().location`   |     |

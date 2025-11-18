@@ -4,8 +4,6 @@ type: PNG
 razza: Umano
 alias: il Cremisi
 condizione: Vivo
-relazione_con_pg:
-relazione_con_party: Amichevole
 relazione:
 sesso: Maschio
 occupazione:

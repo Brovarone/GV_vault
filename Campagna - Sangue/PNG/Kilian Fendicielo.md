@@ -4,8 +4,6 @@ type: PNG
 razza: Nano
 alias: 
 condizione: Vivo
-relazione_con_pg: 
-relazione_con_party: 
 sesso: Maschio
 occupazione: 
 location: ["[[Kaz Dum]]"]

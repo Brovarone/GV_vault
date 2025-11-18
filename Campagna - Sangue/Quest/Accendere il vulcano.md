@@ -1,19 +1,21 @@
 ---
 fileClass: quest
 type: Quest
-location: ["[[Kaz Dum]]"]
-datore: "[[Thrain martello ridente]]"
-scadenza: 
-ricompensa: 
-alias: 
-stato: 
-priorita: 
+location:
+  - "[[Kaz Dum]]"
+datore: "[[Thrain Martello Ridente]]"
+scadenza:
+ricompensa:
+alias:
+stato: attiva
+priorita:
 ---
 # Quest: Accendere il vulcano
 
 > **Obiettivo Principale:** 
+Riaccendere la fucina sotto il vulcano di [[Kaz Dum]] usando il [[Maglio di Ragnar]] sull'incudine.
 
-| Proprietà               | Valore                       |     |
+| Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |
 | **Datore di Lavoro**    | `$= dv.current().datore`     |     |
 | **Luogo di Partenza**   | `$= dv.current().location`   |     |

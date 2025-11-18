@@ -1,12 +1,19 @@
 ---
 fileClass: quest
 type: Quest
+location: 
+datore: 
+scadenza: 
+ricompensa: 
+alias: 
+stato: 
+priorita: 
 ---
 # Quest: {{title}}
 
 > **Obiettivo Principale:** 
 
-| Proprietà               | Valore                       |     |
+| Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |
 | **Datore di Lavoro**    | `$= dv.current().datore`     |     |
 | **Luogo di Partenza**   | `$= dv.current().location`   |     |

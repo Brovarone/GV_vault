@@ -17,13 +17,11 @@ fieldsOrder:
   - rgJ2L6
   - gGbmst
   - baathx
-  - mAdGIJ
-  - oQlCZI
   - qNvg20
   - FPlw0U
   - eIWxUc
   - b7Pb07
-version: "2.168"
+version: "2.170"
 fields:
   - name: razza
     type: Select
@@ -47,26 +45,6 @@ fields:
         "2": Morto
     path: ""
     id: FPlw0U
-  - name: relazione_con_pg
-    type: Select
-    options:
-      sourceType: ValuesList
-      valuesList:
-        "1": Amichevole
-        "2": Neutrale
-        "3": Ostile
-    path: ""
-    id: oQlCZI
-  - name: relazione_con_party
-    type: Select
-    options:
-      sourceType: ValuesList
-      valuesList:
-        "1": Amichevole
-        "2": Neutrale
-        "3": Ostile
-    path: ""
-    id: mAdGIJ
   - name: sesso
     type: Select
     options:

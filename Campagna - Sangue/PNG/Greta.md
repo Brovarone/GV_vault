@@ -3,16 +3,15 @@ fileClass: PNG
 type: PNG
 razza:
 alias:
-condizione:
-relazione_con_pg:
-relazione_con_party:
+condizione: Vivo
 relazione:
-sesso:
+sesso: Femmina
 occupazione: Locandiera
 location: ["[[La Sirena Sbronza]]", "[[Korrak]]"]
 classe_sociale:
 picture: ""
 organizzazione:
+class: 
 ---
 
 ## Aspetto e Impressioni Iniziali

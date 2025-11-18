@@ -4,8 +4,6 @@ type: PNG
 razza: Umano
 alias:
 condizione: Morto
-relazione_con_pg:
-relazione_con_party:
 relazione:
 sesso: Femmina
 occupazione:

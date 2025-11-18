@@ -2,18 +2,18 @@
 fileClass: PNG
 type: PNG
 razza: Nano
-alias: 
+alias:
 condizione: Vivo
-relazione_con_pg: 
-relazione_con_party: 
-relazione: 
+relazione:
 sesso: Maschio
-occupazione: 
-location: ["[[Kaz Dum]]"]
-classe_sociale: 
+occupazione: Generale della flotta
+location:
+  - "[[Kaz Dum]]"
+classe_sociale:
 picture: ""
-organizzazione: 
-class: 
+organizzazione:
+  - "[[Consiglio di Kaz Dum]]"
+class:
 ---
 
 ## Aspetto e Impressioni Iniziali

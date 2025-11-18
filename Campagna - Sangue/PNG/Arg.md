@@ -7,8 +7,6 @@ razza: Nano
 alias:
 organizzazione:
   - "[[Consiglio dell' arcipelago]]"
-relazione_con_pg:
-relazione_con_party:
 relazione:
 occupazione: Capo del Porto
 location:

@@ -4,8 +4,6 @@ type: PNG
 razza: Nano
 condizione: Vivo
 alias:
-relazione_con_pg:
-relazione_con_party: Amichevole
 relazione:
 sesso: Maschio
 occupazione: Ambasciatore Diplomatico

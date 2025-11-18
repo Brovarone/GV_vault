@@ -11,10 +11,11 @@ extends:
 savedViews: []
 favoriteView:
 fieldsOrder:
+  - q3KK7f
   - cD8p1e
   - fDvoBn
   - rqq1JQ
-version: "2.27"
+version: "2.28"
 fields:
   - name: subtype
     type: Input
@@ -35,4 +36,9 @@ fields:
       dvQueryString: dv.pages('"Campagna - Sangue/Location"')
     path: ""
     id: rqq1JQ
+  - name: alias
+    type: Input
+    options: {}
+    path: ""
+    id: q3KK7f
 ---

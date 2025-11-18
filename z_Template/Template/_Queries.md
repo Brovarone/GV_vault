@@ -7,16 +7,6 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
 
-// ----- 1. Conta le righe -----
-const rows = dv.pages('"Campagna - Sangue/PNG"')
-               .where(f => f.type === "PNG")
-               .where(f => {
-                   if (!f.location) return false;
-                   const loc = Array.isArray(f.location) ? f.location : [f.location];
-                   return loc.some(l => l.path.includes(callerFileName));
-               })
-               .length;          // <-- numero di righe
-
 dv.table( ["Nome", "Razza", "Occupazione", "Organizzazione"], dv.pages('"Campagna - Sangue/PNG"')
 .where(f => f.type === "PNG")
 .where(f => {
@@ -29,19 +19,13 @@ return alocations.some(link => link.path.includes(callerFileName) );
 })
 .map(p =>  [p.file.link, p.razza, p.occupazione , p.organizzazione] )) ;
 
+// ----- Conta le righe -----
+const rows = alocation.lenght        // <-- numero di righe
 
-// ----- 3. Salva il conteggio in un elemento nascosto -----
-dv.span(`<span class="dv-count" style="display:none;">${rows}</span>`);
-
-
-// ----- 4. Dopo il rendering, copia il valore nel titolo del callout -----
 setTimeout(() => {
-    const countEl = document.querySelector('.dv-count');
-    if (!countEl) return;
-
     const calloutTitle = document.querySelector('.callout[data-callout="png"] .callout-title');
     if (calloutTitle) {
-        calloutTitle.dataset.rows = countEl.textContent;   // mette l'attributo data-rows. Si puo' usare anche row
+        calloutTitle.dataset.rows = rows;
     }
 }, 100);
 
@@ -56,16 +40,6 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
 
-// ----- 1. Conta le righe -----
-const rows = dv.pages('"Campagna - Sangue/PNG"')
-               .where(f => f.type === "PNG")
-               .where(f => {
-                   if (!f.organizzazione) return false;
-                   const loc = Array.isArray(f.organizzazione) ? f.organizzazione : [f.organizzazione];
-                   return loc.some(l => l.path.includes(callerFileName));
-               })
-               .length;          // <-- numero di righe
-
 dv.table( ["Nome", "Razza", "Occupazione", "Location"], dv.pages('"Campagna - Sangue/PNG"')
 .where(f => f.type === "PNG")
 .where(f => {
@@ -78,20 +52,15 @@ return aorganizzazione.some(link => link.path.includes(callerFileName) );
 })
 .map(p =>  [p.file.link, p.razza, p.occupazione, p.location] )) ;
 
-// ----- 3. Salva il conteggio in un elemento nascosto -----
-dv.span(`<span class="dv-count" style="display:none;">${rows}</span>`);
+// ----- 1. Conta le righe -----
+const rows = aorganizzazione.length;          // <-- numero di righe
 
-// ----- 4. Dopo il rendering, copia il valore nel titolo del callout -----
 setTimeout(() => {
-    const countEl = document.querySelector('.dv-count');
-    if (!countEl) return;
-
     const calloutTitle = document.querySelector('.callout[data-callout="png"] .callout-title');
     if (calloutTitle) {
-        calloutTitle.dataset.rows = countEl.textContent;   // mette l'attributo data-rows. Si puo' usare anche row
+        calloutTitle.dataset.rows = rows;
     }
 }, 100);
-
 ``` 
 ^query-png-organizzazioni
 
@@ -103,7 +72,7 @@ const activeFile = app.workspace.getActiveFile();
 const callerFileName = activeFile ? activeFile.basename : dv.current().file.name;
 // Usa per debugging 
 //dv.header(4, callerFileName);
-
+            
 dv.table( ["Nome"], dv.pages('"Campagna - Sangue/Organizzazioni"')
  	.where(f => f.type === "Organizzazione")
  	.where(f => {
@@ -115,6 +84,16 @@ dv.table( ["Nome"], dv.pages('"Campagna - Sangue/Organizzazioni"')
  		return alocations.some(link => link.path.includes(callerFileName) );
  	})
  	.map(p =>  [p.file.link] )) ;
+ 	
+ // ----- 1. Conta le righe -----
+const rows = alocations.length;          // <-- numero di righe
+
+setTimeout(() => {
+    const calloutTitle = document.querySelector('.callout[data-callout="organizzazioni"] .callout-title');
+    if (calloutTitle) {
+        calloutTitle.dataset.rows = rows;
+    }
+}, 100);
 ```
 ^query-organizzazioni
 
@@ -126,7 +105,7 @@ const activeFile = app.workspace.getActiveFile();
 const callerFileName = activeFile ? activeFile.basename : dv.current().file.name;
 // Usa per debugging 
 //dv.header(4, callerFileName);
-
+           
 dv.table( ["Nome", "Tipo"], dv.pages('"Campagna - Sangue/Location"')
  	.where(f => f.type === "Location")
  	.where(f => {
@@ -138,6 +117,16 @@ dv.table( ["Nome", "Tipo"], dv.pages('"Campagna - Sangue/Location"')
  		return aparent.some(link => link.path.includes(callerFileName) );
  	})
  	.map(p =>  [p.file.link, p.tipo_location] )) ;
+
+// ----- Conta le righe -----
+const rows = aparent.length;          // <-- numero di righe
+    
+setTimeout(() => {
+    const calloutTitle = document.querySelector('.callout[data-callout="sublocation"] .callout-title');
+    if (calloutTitle) {
+        calloutTitle.dataset.rows = rows;
+    }
+}, 100);
 ```
 ^query-sublocation
 
@@ -187,5 +176,15 @@ dv.table(
     ["Nota", "Cartella"],
     results
 );
+
+// ----- Conta le righe -----
+const rows = results.length;          // <-- numero di righe
+   
+setTimeout(() => {
+    const calloutTitle = document.querySelector('.callout[data-callout="apparein"] .callout-title');
+    if (calloutTitle) {
+        calloutTitle.dataset.rows = rows;
+    }
+}, 100);
 ```
 ^query-apparein
