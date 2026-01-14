@@ -1,12 +1,13 @@
 ---
 razza: Nano
 classe1: Bardo
-classe1_max: 2
+classe1_max: 3
 classe2: Vagabondo
 classe2_max: 2
 classe3: Mago
 classe3_max: 1
 path_talenti: z_GV/Talenti
+includi_generali: true
 ---
 
 ## 🎲 Talenti Sbloccati per il tuo Multiclasse
@@ -15,6 +16,7 @@ path_talenti: z_GV/Talenti
 >```dataviewjs
 >// 1. Lettura dinamica del Path dal frontmatter (dv.current().path_talenti)
 >const path = dv.current().path_talenti;
+>const generali = dv.current().includi_generali;
 >
 >// 2. Definizione dei parametri del multiclasse
 >const max_livello_totale = dv.current().classe1_max + dv.current().classe2_max + dv.current().classe3_max;
@@ -32,7 +34,8 @@ path_talenti: z_GV/Talenti
 >    .where(p => 
 >        (
 >            // Talenti Generali o di Razza: livello totale di personaggio
->            (p.class === "Generali" || p.class === razza) && p.level <= max_livello_totale
+>            (generali) &&
+>            (p.class === "Generali" || p.class === razza) && (p.level <= max_livello_totale)
 >        ) || (
 >            // Classe 1: livello massimo di Classe 1
 >            p.class === classe1 && p.level <= max_classe1
@@ -45,8 +48,9 @@ path_talenti: z_GV/Talenti
 >        )
 >    )
 >    .sort(p => p.level, 'asc')
->    .sort(p => p.class, 'asc')
->    .sort(p => p.file.name, 'asc');
+>    //.sort(p => p.class, 'asc')
+>    //.sort(p => p.file.name, 'asc')
+>    ;
 >
 >// 4. Visualizzazione dei risultati in una tabella
 >dv.table(
@@ -56,7 +60,9 @@ path_talenti: z_GV/Talenti
 >        p.class,
 >        p.level,
 >        p.prerequisites
->    ])
+>    ])    
+>    .sort(p => p.level, 'asc')
+>    .sort(p => p.class, 'asc')        
 >);
 >```
 

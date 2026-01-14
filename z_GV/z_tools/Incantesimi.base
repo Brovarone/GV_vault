@@ -1,0 +1,31 @@
+views:
+  - type: table
+    name: Tabella
+    filters:
+      and:
+        - file.inFolder("z_GV/Incantesimi")
+        - level <= 4
+        - or:
+            - area.contains("Personale")
+            - area.contains("personale")
+    order:
+      - file.name
+      - level
+      - area
+      - azioni
+      - durata
+      - bersagli
+      - recupero
+      - descrittori
+    sort:
+      - property: level
+        direction: ASC
+      - property: azioni
+        direction: DESC
+      - property: durata
+        direction: ASC
+    columnSize:
+      note.level: 35
+      note.area: 81
+      note.azioni: 96
+      note.descrittori: 121

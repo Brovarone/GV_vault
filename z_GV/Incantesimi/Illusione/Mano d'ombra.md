@@ -7,7 +7,7 @@ cost: 1
 school: Illusione
 descrittori: necrotico, evocazione
 componenti: V, S
-azioni: standard: assegna un nuovo ordine alla mano
+azioni: "standard: assegna un nuovo ordine alla mano"
 area: distanza 10
 durata: mantenere minore
 recupero: turno

@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: zona
 componenti: V, S
-azioni: movimento: sposta la zona di 4
+azioni: "movimento: sposta la zona di 4"
 area: emanazione 5 entro 25
 durata: mantenere minore
 recupero: standard

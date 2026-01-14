@@ -6,7 +6,7 @@ level: 2
 cost: 1
 school: Illusione
 componenti: S
-azioni: movimento: il personaggio può variare la posizione del quadretto
+azioni: "movimento: il personaggio può variare la posizione del quadretto"
 area: distanza 10
 durata: mantenere minore
 recupero: standard

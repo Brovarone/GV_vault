@@ -7,7 +7,7 @@ cost: 1
 school: Invocazione
 descrittori: fuoco, evocazione
 componenti: V, S
-azioni: standard: il personaggio può far esplodere la sfera ponendo fine
+azioni: "standard: il personaggio può far esplodere la sfera ponendo fine"
 area: distanza 10
 durata: mantenere standard
 recupero: standard

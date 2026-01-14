@@ -7,7 +7,7 @@ cost: 1
 school: Ammaliamento
 descrittori: psichico
 componenti: V, S
-azioni: qualsiasi: il bersaglio esegue la stessa azione
+azioni: "qualsiasi: il bersaglio esegue la stessa azione"
 area: distanza 5
 bersagli: Creatura
 durata: mantenere minore

@@ -7,7 +7,7 @@ cost: 1
 school: Invocazione
 descrittori: fuoco
 componenti: V, S
-azioni: minore: effettua un attacco a distanza 20
+azioni: "minore: effettua un attacco a distanza 20"
 area: personale
 bersagli: Personaggio
 durata: mantenere standard

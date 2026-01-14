@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: Tabella
+    filters:
+      and:
+        - file.folder == "z_GV/Stili/Vagabondo"
+        - level <= 5
+        - tree_name == "Azioni immediate"
+    groupBy:
+      property: tree_name
+      direction: ASC
+    order:
+      - file.name
+      - tree
+      - level
+      - prerequisites
+    sort:
+      - property: tree
+        direction: ASC
+      - property: level
+        direction: ASC

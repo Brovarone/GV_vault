@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: evocazione
 componenti: V, S
-azioni: minore: effettua un attacco entro l’area.
+azioni: "minore: effettua un attacco entro l’area."
 area: distanza 10
 durata: mantenere minore
 recupero: standard

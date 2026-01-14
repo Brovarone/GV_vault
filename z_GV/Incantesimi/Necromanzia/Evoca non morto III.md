@@ -7,7 +7,7 @@ cost: 1
 school: Necromanzia
 descrittori: evocazione
 componenti: V, S
-azioni: standard: il personaggio assegna un compito all'evocazione.
+azioni: "standard: il personaggio assegna un compito all'evocazione."
 area: distanza 15
 durata: un turno (I)
 recupero: standard

@@ -7,7 +7,7 @@ cost: 1
 school: Invocazione
 descrittori: forza
 componenti: V, S
-azioni: movimento: ripete l'attacco, può modificare l'area.
+azioni: "movimento: ripete l'attacco, può modificare l'area."
 area: propagazione ravvicinata 5
 durata: mantenere minore
 recupero: standard

@@ -28,7 +28,7 @@ Riaccendere la fucina sotto il vulcano di [[Kaz Dum]] usando il [[Maglio di Ragn
 ### Fase 2: Azione
 - [ ] 
 ### Fase 3: Conclusione
-- [ ] 
+- [x] [[12.17-12-2025 Giorno 22]]
 
 ---
 ## Note e Piste

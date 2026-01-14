@@ -7,7 +7,7 @@ cost: 1
 school: Invocazione
 descrittori: acido, freddo, fulmine, fuoco
 componenti: V, S
-azioni: minore: effettua un attacco con una singola sfera a distanza 10
+azioni: "minore: effettua un attacco con una singola sfera a distanza 10"
 area: personale
 bersagli: Personaggio
 durata: mantenere minore

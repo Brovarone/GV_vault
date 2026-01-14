@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: fulmine, zona
 componenti: V, S
-azioni: minore: sposta la zona di 3.
+azioni: "minore: sposta la zona di 3."
 area: emanazione 3 entro 10
 durata: mantenere standard
 recupero: turno

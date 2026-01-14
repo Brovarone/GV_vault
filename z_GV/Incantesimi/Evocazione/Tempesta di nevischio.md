@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: zona
 componenti: V, S
-azioni: movimento: la zona si sposta di 3.
+azioni: "movimento: la zona si sposta di 3."
 area: emanazione 5 entro 10
 bersagli: Creature
 durata: mantenere minore

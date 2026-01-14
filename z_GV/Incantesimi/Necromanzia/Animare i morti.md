@@ -7,7 +7,7 @@ cost: 1
 school: Necromanzia
 descrittori: evocazione
 componenti: V, S
-azioni: standard: il personaggio impartisce un ordine alla creatura animata
+azioni: "standard: il personaggio impartisce un ordine alla creatura animata"
 area: contatto
 durata: dieci giorni (I)
 recupero: riposo

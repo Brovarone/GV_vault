@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: evocazione
 componenti: V, S
-azioni: movimento: il personaggio può impartire un ordine al servitore
+azioni: "movimento: il personaggio può impartire un ordine al servitore"
 area: distanza 10
 durata: mantenere minore
 recupero: turno

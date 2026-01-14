@@ -6,7 +6,7 @@ level: 7
 cost: 1
 school: Trasmutazione
 componenti: V, S
-azioni: minore: il personaggio può trasferire la volontà tra una copia e
+azioni: "minore: il personaggio può trasferire la volontà tra una copia e"
 area: distanza 20
 durata: mantenere minore
 recupero: standard

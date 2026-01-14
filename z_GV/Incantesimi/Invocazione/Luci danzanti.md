@@ -6,7 +6,7 @@ level: 2
 cost: 1
 school: Invocazione
 componenti: V
-azioni: minore: sposta le luci in un altro punto entro gittata.
+azioni: "minore: sposta le luci in un altro punto entro gittata."
 area: distanza 20
 durata: mantenere gratuita
 recupero: gratuita

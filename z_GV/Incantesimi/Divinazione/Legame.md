@@ -6,7 +6,7 @@ level: 2
 cost: 1
 school: Divinazione
 componenti: V
-azioni: minore: sposta l’attenzione dal bersaglio al personaggio e viceversa.
+azioni: "minore: sposta l’attenzione dal bersaglio al personaggio e viceversa."
 area: contatto
 durata: mantenere standard
 recupero: standard

@@ -7,7 +7,7 @@ cost: 1
 school: Necromanzia
 descrittori: necrotico, evocazione
 componenti: V, S
-azioni: minore: lo sciame attacca un bersaglio nell’area
+azioni: "minore: lo sciame attacca un bersaglio nell’area"
 area: emanazione ravvicinata 2 (C)
 durata: mantenere minore
 recupero: turno

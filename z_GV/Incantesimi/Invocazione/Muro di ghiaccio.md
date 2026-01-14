@@ -7,7 +7,7 @@ cost: 1
 school: Invocazione
 descrittori: zona, freddo
 componenti: V, S
-azioni: minore: il personaggio può fare esplodere il muro
+azioni: "minore: il personaggio può fare esplodere il muro"
 area: muro 20/5 entro 50
 durata: mantenere minore
 recupero: standard

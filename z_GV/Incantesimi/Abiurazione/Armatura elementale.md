@@ -7,7 +7,7 @@ cost: 1
 school: Abiurazione
 descrittori: acido, freddo, fulmine, fuoco
 componenti: V, S
-azioni: movimento: cambia l'elemento selezionato con un altro
+azioni: "movimento: cambia l'elemento selezionato con un altro"
 area: personale
 bersagli: Personaggio
 durata: mantenere minore

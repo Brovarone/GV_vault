@@ -6,7 +6,7 @@ level: 3
 cost: 1
 school: Trasmutazione
 componenti: V, S
-azioni: standard: il personaggio ridiventa invisibile
+azioni: "standard: il personaggio ridiventa invisibile"
 area: personale
 bersagli: Personaggio
 durata: mantenere minore

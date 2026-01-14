@@ -7,7 +7,7 @@ cost: 1
 school: Necromanzia
 descrittori: necrotico
 componenti: V, S
-azioni: standard: effettua un attacco a distanza 10
+azioni: "standard: effettua un attacco a distanza 10"
 area: personale
 bersagli: Personaggio
 durata: mantenere minore

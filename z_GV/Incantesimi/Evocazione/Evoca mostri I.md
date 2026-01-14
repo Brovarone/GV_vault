@@ -7,7 +7,7 @@ cost: 1
 school: Evocazione
 descrittori: evocazione
 componenti: V, S
-azioni: standard: il personaggio assegna una nuova azione all’evocazione.
+azioni: "standard: il personaggio assegna una nuova azione all’evocazione."
 area: distanza 10
 durata: mantenere minore
 recupero: standard
