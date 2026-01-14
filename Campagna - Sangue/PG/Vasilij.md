@@ -18,6 +18,7 @@ type: PG
  - Runa del Cfl [[Cura Ferite Leggere]]
  - 20 mo
  - Scialuppa
+ - 7 razioni 
 ### Sulla nave
 - 50 mo
 
