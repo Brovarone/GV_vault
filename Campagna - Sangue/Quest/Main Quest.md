@@ -14,7 +14,7 @@ fileClass: quest
 # Quest: Main Quest
 
 > **Obiettivo Principale:** 
-Recuperare il [[Diamante del demone]]  nell'isola di [[Zarates]].
+Recuperare il [[Diamante del demone]]  nell'isola di [[Zathar's Rest]].
 
 | Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |

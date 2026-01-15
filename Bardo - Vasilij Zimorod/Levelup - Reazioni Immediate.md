@@ -112,7 +112,7 @@ Abilità: Costituzione, Intelligenza, Saggezza
 
 | Tipo  |         | Nome                                                     | Costo |
 | ----- | ------- | -------------------------------------------------------- | ----- |
-| Tal   | Bardo 3 | [[Ispirazione migliorata]]                               | 5     |
+| Tal   | Bardo 3 | [[Dono bardico]]                                         | 5     |
 | Benef |         | [[Attacco secondario (livello)\|Attacco secondario (5)]] | 1=6   |
 | Stile | alb 4   | [[Reazione improvvisa]]                                  | 4=10  |
 | Stile | alb 3   | [[Negare la fuga]]                                       | 4=14  |

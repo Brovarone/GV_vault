@@ -1,10 +1,11 @@
 ---
 fileClass: oggetto
 type: Oggetto
-subtype: Oggetto magico
+subtype: Arma
 collegamenti:
-  - "[[Arvander il Cremisi]]"
-location: "[[Zathar's Rest]]"
+  - "[[Rolan Duskwhisper]]"
+location:
+alias:
 ---
 
 
