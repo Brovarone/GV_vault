@@ -1,10 +1,13 @@
 ---
+subtype:
+  - Arma
+  - Oggetto Magico
+collegamenti:
+  - "[[Vasilij]]"
+location:
+alias:
 fileClass: oggetto
 type: Oggetto
-subtype: Oggetto Magico
-collegamenti:
-  - "[[Arvander il Cremisi]]"
-location: "[[Zathar's Rest]]"
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 fileClass: oggetto
 type: Oggetto
-subtype: Barca
+subtype: [Barca, Barca]
 collegamenti: ["[[Rolan Duskwhisper]]"]
 location: 
 ---

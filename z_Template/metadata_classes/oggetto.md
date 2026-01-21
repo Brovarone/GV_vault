@@ -11,17 +11,12 @@ extends:
 savedViews: []
 favoriteView:
 fieldsOrder:
-  - q3KK7f
-  - cD8p1e
+  - dFi2vH
+  - PzzvX0
   - fDvoBn
   - rqq1JQ
-version: "2.28"
+version: "2.35"
 fields:
-  - name: subtype
-    type: Input
-    options: {}
-    path: ""
-    id: cD8p1e
   - name: collegamenti
     type: MultiFile
     options:
@@ -37,8 +32,17 @@ fields:
     path: ""
     id: rqq1JQ
   - name: alias
-    type: Input
-    options: {}
+    type: Multi
+    options:
+      sourceType: ValuesList
+      valuesList: {}
     path: ""
-    id: q3KK7f
+    id: dFi2vH
+  - name: subtype
+    type: Multi
+    options:
+      sourceType: ValuesList
+      valuesList: {}
+    path: ""
+    id: PzzvX0
 ---

@@ -1,7 +1,7 @@
 ---
 fileClass: oggetto
 type: Oggetto
-subtype: Handout
+subtype: [Handout]
 collegamenti:
   - "[[Sylmana]]"
   - "[[Vasilij]]"

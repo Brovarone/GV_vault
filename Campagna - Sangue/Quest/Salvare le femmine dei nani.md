@@ -1,20 +1,17 @@
 ---
-location:
-  - "[[Porto Grigio]]"
-datore: "[[Arvander il Cremisi]]"
-scadenza:
-ricompensa:
+fileClass: quest
+type: Quest
+location: "[[Kaz Dum]]"
+datore: "[[Thrain Martello Ridente]]"
+scadenza: Nessuna
+ricompensa: Restituzione della schiava di Grumal [[Grikka]]
 alias:
 stato: In corso
 priorita:
-type: Quest
-fileClass: quest
 ---
+# Quest: Salvare le femmine dei nani
 
-# Quest: Main Quest
-
-> **Obiettivo Principale:** 
-Recuperare il [[Diamante del demone]]  nell'isola di [[Zathar's Rest]].
+> **Obiettivo Principale:** Recuperare le femmine nane scomparse
 
 | Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |
@@ -25,7 +22,7 @@ Recuperare il [[Diamante del demone]]  nell'isola di [[Zathar's Rest]].
 | **Priorità**            | `$= dv.current.priorita`     |     |
 ## Passo Passo (Sotto-obiettivi)
 ### Fase 1: Investigazione
-- [ ]  
+- [ ] 
 ### Fase 2: Azione
 - [ ] 
 ### Fase 3: Conclusione
@@ -35,7 +32,7 @@ Recuperare il [[Diamante del demone]]  nell'isola di [[Zathar's Rest]].
 ## Note e Piste
 
 * **Connessioni:** 
-* **Ostacoli:** Ci sono dei mostri marini nelle acque attorno all'atollo
+* **Ostacoli:** 
 * **Risorse:** 
 
 ## Riassunto (A Fine Quest)

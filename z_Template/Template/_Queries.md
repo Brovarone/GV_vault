@@ -7,25 +7,29 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
 
-dv.table( ["Nome", "Razza", "Occupazione", "Organizzazione"], dv.pages('"Campagna - Sangue/PNG"')
-.where(f => f.type === "PNG")
-.where(f => {
-// 1. Controlla che 'location' esista 
-if (!f.location) return false; 
-// 2. Forziamo 'f.location' ad essere un array, anche se è un singolo link 
-const alocations = Array.isArray(f.location) ? f.location : [f.location]; 
-// 3. Applichiamo la logica 'some' solo sull'array 
-return alocations.some(link => link.path.includes(callerFileName) );
-})
-.map(p =>  [p.file.link, p.razza, p.occupazione , p.organizzazione] )) ;
+// 2. Eseguiamo la query e salviamo i dati in una variabile 'data'
+const data = dv.pages('"Campagna - Sangue/PNG"')
+    .where(f => f.type === "PNG")
+    .where(f => {
+        if (!f.location) return false; 
+        const alocations = Array.isArray(f.location) ? f.location : [f.location]; 
+        return alocations.some(link => link.path.includes(callerFileName));
+    });
 
-// ----- Conta le righe -----
-const rows = alocation.lenght        // <-- numero di righe
+// 3. Generiamo la tabella usando i dati mappati
+dv.table(
+    ["Nome", "Razza", "Occupazione", "Organizzazione"], 
+    data.map(p => [p.file.link, p.razza, p.occupazione, p.organizzazione])
+);
 
+// 4. Conta le righe correttamente dai dati filtrati
+const rowCount = data.length; 
+
+// 5. Aggiorna il titolo del callout
 setTimeout(() => {
     const calloutTitle = document.querySelector('.callout[data-callout="png"] .callout-title');
     if (calloutTitle) {
-        calloutTitle.dataset.rows = rows;
+        calloutTitle.dataset.rows = rowCount;
     }
 }, 100);
 
@@ -40,21 +44,28 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
 
-dv.table( ["Nome", "Razza", "Occupazione", "Location"], dv.pages('"Campagna - Sangue/PNG"')
-.where(f => f.type === "PNG")
-.where(f => {
-// 1. Controlla che 'location' esista 
-if (!f.organizzazione) return false; 
-// 2. Forziamo 'f.location' ad essere un array, anche se è un singolo link 
-const aorganizzazione = Array.isArray(f.organizzazione) ? f.organizzazione : [f.organizzazione]; 
-// 3. Applichiamo la logica 'some' solo sull'array 
-return aorganizzazione.some(link => link.path.includes(callerFileName) );
-})
-.map(p =>  [p.file.link, p.razza, p.occupazione, p.location] )) ;
+// 2. Filtriamo le pagine e salviamo il risultato in una variabile 'results'
+const results = dv.pages('"Campagna - Sangue/PNG"')
+    .where(f => f.type === "PNG")
+    .where(f => {
+        // Controllo esistenza organizzazione
+        if (!f.organizzazione) return false; 
+        // Normalizzazione in array (per gestire link singoli o multipli)
+        const organizzazioni = Array.isArray(f.organizzazione) ? f.organizzazione : [f.organizzazione]; 
+        // Controllo se il file corrente è incluso tra le organizzazioni
+        return organizzazioni.some(link => link.path.includes(callerFileName));
+    });
 
-// ----- 1. Conta le righe -----
-const rows = aorganizzazione.length;          // <-- numero di righe
+// 3. Mostriamo la tabella usando i risultati filtrati
+dv.table(
+    ["Nome", "Razza", "Occupazione", "Location"], 
+    results.map(p => [p.file.link, p.razza, p.occupazione, p.location])
+);
 
+// 4. Contiamo le righe direttamente dalla variabile 'results'
+const rows = results.length;
+
+// 5. Iniettiamo il numero nel titolo del callout
 setTimeout(() => {
     const calloutTitle = document.querySelector('.callout[data-callout="png"] .callout-title');
     if (calloutTitle) {
@@ -73,21 +84,25 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
             
-dv.table( ["Nome"], dv.pages('"Campagna - Sangue/Organizzazioni"')
- 	.where(f => f.type === "Organizzazione")
- 	.where(f => {
- 		// 1. Controlla che 'location' esista 
- 		if (!f.location) return false; 
- 		// 2. Forziamo 'f.location' ad essere un array, anche se è un singolo link 
- 		const alocations = Array.isArray(f.location) ? f.location : [f.location]; 
- 		// 3. Applichiamo la logica 'some' solo sull'array 
- 		return alocations.some(link => link.path.includes(callerFileName) );
- 	})
- 	.map(p =>  [p.file.link] )) ;
- 	
- // ----- 1. Conta le righe -----
-const rows = alocations.length;          // <-- numero di righe
+// 2. Eseguiamo la query e salviamo il risultato in 'organizzazioni'
+const organizzazioni = dv.pages('"Campagna - Sangue/Organizzazioni"')
+    .where(f => f.type === "Organizzazione")
+    .where(f => {
+        // Controlla che 'location' esista 
+        if (!f.location) return false; 
+        // Forza 'f.location' ad essere un array
+        const alocations = Array.isArray(f.location) ? f.location : [f.location]; 
+        // Verifica la corrispondenza col file chiamante
+        return alocations.some(link => link.path.includes(callerFileName));
+    });
 
+// 3. Generiamo la tabella
+dv.table(["Nome"], organizzazioni.map(p => [p.file.link]));
+
+// 4. Conta le righe dai risultati della query
+const rows = organizzazioni.length; 
+
+// 5. Aggiorna il titolo del callout
 setTimeout(() => {
     const calloutTitle = document.querySelector('.callout[data-callout="organizzazioni"] .callout-title');
     if (calloutTitle) {
@@ -106,21 +121,25 @@ const callerFileName = activeFile ? activeFile.basename : dv.current().file.name
 // Usa per debugging 
 //dv.header(4, callerFileName);
            
-dv.table( ["Nome", "Tipo"], dv.pages('"Campagna - Sangue/Location"')
- 	.where(f => f.type === "Location")
- 	.where(f => {
- 		// 1. Controlla che 'parent' esista 
- 		if (!f.parent) return false; 
- 		// 2. Forziamo 'f.parent' ad essere un array, anche se è un singolo link 
- 		const aparent = Array.isArray(f.parent) ? f.parent : [f.parent]; 
- 		// 3. Applichiamo la logica 'some' solo sull'array 
- 		return aparent.some(link => link.path.includes(callerFileName) );
- 	})
- 	.map(p =>  [p.file.link, p.tipo_location] )) ;
+// 2. Eseguiamo la query e salviamo il risultato in 'locations'
+const locations = dv.pages('"Campagna - Sangue/Location"')
+    .where(f => f.type === "Location")
+    .where(f => {
+        // Controlla che 'parent' esista 
+        if (!f.parent) return false; 
+        // Forza 'f.parent' ad essere un array
+        const aparents = Array.isArray(f.parent) ? f.parent : [f.parent]; 
+        // Verifica la corrispondenza col file chiamante
+        return aparents.some(link => link.path.includes(callerFileName));
+    });
 
-// ----- Conta le righe -----
-const rows = aparent.length;          // <-- numero di righe
-    
+// 3. Generiamo la tabella
+dv.table(["Nome", "Tipo"], locations.map(p => [p.file.link, p.tipo_location]));
+
+// 4. Conta le righe dai risultati salvati
+const rows = locations.length; 
+
+// 5. Aggiorna il titolo del callout (selettore: sublocation)
 setTimeout(() => {
     const calloutTitle = document.querySelector('.callout[data-callout="sublocation"] .callout-title');
     if (calloutTitle) {

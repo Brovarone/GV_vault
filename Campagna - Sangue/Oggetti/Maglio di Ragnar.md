@@ -1,7 +1,7 @@
 ---
 fileClass: oggetto
 type: Oggetto
-subtype: Arma
+subtype: [Arma, Oggetto Magico]
 collegamenti:
   - "[[Ragnar]]"
 location:

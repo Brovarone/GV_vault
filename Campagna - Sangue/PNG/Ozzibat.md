@@ -7,7 +7,7 @@ condizione: Vivo
 relazione:
 sesso: Maschio
 occupazione: Pirata
-location: "[[Kaz Dum]]"
+location: ["[[Kaz Dum]]", "[[Mor-Keth]]"]
 classe_sociale:
 picture: ""
 organizzazione:
