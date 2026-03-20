@@ -2,7 +2,7 @@
 fileClass: quest
 type: Quest
 location:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 datore: "[[Thrain Martello Ridente]]"
 scadenza:
 ricompensa:
@@ -13,7 +13,7 @@ priorita:
 # Quest: Accendere il vulcano
 
 > **Obiettivo Principale:** 
-Riaccendere la fucina sotto il vulcano di [[Kaz Dum]] usando il [[Maglio di Ragnar]] sull'incudine.
+Riaccendere la fucina sotto il vulcano di [[Karal Dum]] usando il [[Maglio di Ragnar]] sull'incudine.
 
 | Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |

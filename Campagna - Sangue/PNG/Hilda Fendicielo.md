@@ -7,7 +7,7 @@ condizione: Vivo
 sesso: Femmina
 occupazione: Sacerdotessa del vulcano
 location:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

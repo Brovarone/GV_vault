@@ -1,6 +1,6 @@
 ---
 type: Organizzazione
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 ---
 
 > [!png]- Membri

@@ -4,10 +4,11 @@ type: PNG
 razza: Nano
 alias:
 condizione: Vivo
-relazione: ["[[Borin occhio fino]]"]
+relazione:
+  - "[[Borin occhio fino]]"
 sesso: Maschio
 occupazione: Capetto mercato sotterraneo al porto
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

@@ -6,7 +6,7 @@ alias:
 condizione: Scomparso
 sesso:
 occupazione: Eroe di Kaz dum
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

@@ -7,11 +7,12 @@ condizione: Vivo
 relazione:
 sesso: Maschio
 occupazione: Re
-location: 
- - "[[Kaz Dum]]"
+location:
+  - "[[Karal Dum]]"
 classe_sociale: Re
 picture: ""
-organizzazione: ["[[Consiglio di Kaz Dum]]"]
+organizzazione:
+  - "[[Consiglio di Kaz Dum]]"
 class:
 ---
 

@@ -3,7 +3,7 @@ fileClass: location
 type: Location
 poi:
 parent:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 tipo_location: Locanda
 picture: ""
 ---

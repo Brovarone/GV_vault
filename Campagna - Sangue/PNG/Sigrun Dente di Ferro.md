@@ -7,7 +7,7 @@ condizione: Vivo
 sesso: Maschio
 occupazione: Capo dei mercanti
 location:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

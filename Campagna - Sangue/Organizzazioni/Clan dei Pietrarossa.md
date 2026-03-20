@@ -1,6 +1,6 @@
 ---
 type: Organizzazione
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 ---
 Clan di nani.
 Padroni del mare 

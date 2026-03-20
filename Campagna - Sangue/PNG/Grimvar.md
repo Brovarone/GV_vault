@@ -7,7 +7,7 @@ condizione: Vivo
 relazione:
 sesso: Maschio
 occupazione: Responsabile del porto
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

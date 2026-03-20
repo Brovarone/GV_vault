@@ -7,7 +7,7 @@ condizione: Vivo
 sesso: Maschio
 occupazione: Maestro forgiatore
 location:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

@@ -6,7 +6,7 @@ alias:
 condizione: Vivo
 sesso:
 occupazione: Paggio
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

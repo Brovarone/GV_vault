@@ -8,7 +8,7 @@ relazione:
 sesso: Maschio
 occupazione: Generale della flotta
 location:
-  - "[[Kaz Dum]]"
+  - "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

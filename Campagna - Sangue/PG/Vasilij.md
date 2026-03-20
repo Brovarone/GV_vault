@@ -15,10 +15,12 @@ type: PG
 - Cercare i manifesti dei ricercati
 - cercare segnali dei clan
 ### Possedimenti
- - Runa del Cfl [[Cura Ferite Leggere]]
- - 20 mo
+ - Runa del CFL [[Cura Ferite Leggere]]
+ - 40 mo
+ - 30 ma
+ - 55 mr
  - Scialuppa
- - 7 razioni 
+ - 6 razioni 
 ### Sulla nave
 - 50 mo
 

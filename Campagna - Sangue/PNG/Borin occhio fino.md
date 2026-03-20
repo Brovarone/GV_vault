@@ -7,7 +7,7 @@ condizione: Vivo
 relazione:
 sesso: Maschio
 occupazione: Capetto mercato superiore
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 classe_sociale:
 picture: ""
 organizzazione:

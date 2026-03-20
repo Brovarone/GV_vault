@@ -1,7 +1,7 @@
 ---
 fileClass: quest
 type: Quest
-location: "[[Kaz Dum]]"
+location: "[[Karal Dum]]"
 datore: "[[Thrain Martello Ridente]]"
 scadenza: Nessuna
 ricompensa: Restituzione della schiava di Grumal [[Grikka]]

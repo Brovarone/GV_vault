@@ -11,7 +11,7 @@ stato: In attesa di ricompensa
 ---
 # Quest: Baule ai nani
 
-> **Obiettivo Principale:**  Riportare un baule a [[Kaz Dum]]  e consegnarlo a [[Grumvir]]
+> **Obiettivo Principale:**  Riportare un baule a [[Karal Dum]]  e consegnarlo a [[Grumvir]]
 
 | Proprietà               |                              |     |
 | :---------------------- | :--------------------------- | --- |
@@ -27,7 +27,7 @@ stato: In attesa di ricompensa
 - [ ] 
 
 ### Fase 2: Azione
-- [x] Navigare fino a [[Kaz Dum]]
+- [x] Navigare fino a [[Karal Dum]]
 - [ ] 
 
 ### Fase 3: Conclusione
