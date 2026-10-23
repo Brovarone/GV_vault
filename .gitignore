@@ -1,0 +1,5 @@
+# Ignora l'intera cartella .obsidian
+.obsidian/
+
+# Consenti esplicitamente solo la cartella degli snippet
+!.obsidian/snippets/

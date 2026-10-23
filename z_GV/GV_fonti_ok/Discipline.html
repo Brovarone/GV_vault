@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Discipline - G.V. Project</title>
+    <meta name="description" content="G.V. Project">
+    <meta name="author" content="RM-Tech di Rama Stefano">
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/DataTables/css/jquery.dataTables.min.css" rel="stylesheet"/>
+<link href="/Content/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Content/style.css" rel="stylesheet"/>
+
+    <!-- Fontello CSS -->
+    <link href="/fonts/fontello/css/fontello.css" rel="stylesheet">
+    <!-- Plugins -->
+    <link href="/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+    <link href="/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+    <link href="/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="/Content/animations.css" rel="stylesheet">
+    <link href="/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+    <link href="/Content/skins/red.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- body classes:
+        "boxed": boxed layout mode e.g. <body class="boxed">
+        "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1">
+-->
+<body class="front no-trans">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Cerca...</h4>
+                </div>
+<form action="/Search" method="post">                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="searchText">Testo da ricercare</label>
+                            <input type="text" class="form-control" id="searchText" name="searchText" placeholder="Inserisci testo">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-sm btn-default">Cerca</button>
+                    </div>
+</form>            </div>
+        </div>
+    </div>
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+        <!-- header start classes:
+            fixed: fixed navigation mode (sticky menu) e.g. <header class="header fixed clearfix">
+            dark: dark header version e.g. <header class="header dark clearfix">
+            transparent: transparent header version e.g. <header class="header transparent clearfix">
+            to tweak the transparency of header add inline style e.g.<header class="header transparent clearfix" style="background-color:rgba(255,255,255,0.8)">
+        ================ -->
+        <header class="header fixed header-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- header-left start -->
+                        <!-- ================ -->
+                        <div class="header-left clearfix">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="/"><img id="logo" src="/images/GVProjectLogo.png" alt="GV Project"></a>
+                            </div>
+                        </div>
+                        <!-- header-left end -->
+                    </div>
+                    <div class="col-md-8">
+                        <!-- header-right start -->
+                        <!-- ================ -->
+                        <div class="header-right clearfix">
+                            <!-- main-navigation start -->
+                            <!-- ================ -->
+                            <div class="main-navigation animated">
+                                <!-- navbar start -->
+                                <!-- ================ -->
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <div class="container-fluid">
+                                        <!-- Toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li class="dropdown" style="">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personaggio</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="/Home/RaceClasses">Razze e classi</a></li>
+                                                        <li>
+                                                            <a href="/Home/Tricks">Abilit&#224;</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Home/ManageLevel">Gestione livello</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown" style="">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Talenti</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a href="/Features/Benefits">Benefici</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Features">Talenti</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown" style="">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classi</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="/Powers/Spells">Incantesimi</a></li>
+                                                        <li><a href="/Powers/Prayers">Preghiere</a></li>
+                                                        <li><a href="/Powers/Disciplines">Discipline</a></li>
+                                                        <li><a href="/Powers/Styles">Stili</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="dropdown" style="">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Regole</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a href="/Rules">Regolamento</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Rules/Conditions">Condizioni</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Rules/Weapons">Armi e armature</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Rules/Equips">Equipaggiamento</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="/Monsters">Mostri</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!-- navbar end -->
+                            </div>
+                            <!-- main-navigation end -->
+                        </div>
+                        <!-- header-right end -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        
+<!-- page-intro start-->
+<!-- ================ -->
+<div class="page-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li><i class="fa fa-home pr-10"></i><a href="/">Home</a></li>
+                    <li class="active">Discipline</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- page-intro end -->
+<!-- main-container start -->
+<!-- ================ -->
+<section class="main-container">
+    <div class="container">
+        <div class="row">
+            <!-- main start -->
+            <!-- ================ -->
+            <!-- page-title start -->
+            <!-- ================ -->
+            <h1 id="tabs" class="page-title">Discipline</h1>
+
+            <!-- Tabs start -->
+            <!-- ================ -->
+            <div class="vertical hc-tabs">
+                <!-- Tabs Arrow -->
+                <div class="arrow hidden-sm hidden-xs"><i class="fa fa-caret-up"></i></div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#hctab1" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> A due armi</a></li>
+                            <li class=""><a href="#hctab2" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> A due mani</a></li>
+                            <li class=""><a href="#hctab3" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> A una mano</a></li>
+                            <li class=""><a href="#hctab4" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> Con lo scudo</a></li>
+                            <li class=""><a href="#hctab5" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> Lancio</a></li>
+                            <li class=""><a href="#hctab6" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> Senza armi</a></li>
+                            <li class=""><a href="#hctab7" role="tab" data-toggle="tab"><i class="fa fa-street-view pr-10"></i> Tiro</a></li>
+
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                            <div class="tab-pane fade in active" id="hctab1">
+                                <h1 class="text-center title">A due armi</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduearmi-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduearmi-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Ambidestria</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+2 al tiro per colpire con l’arma secondaria</p>
+                                                                                                                                            <p><em>Speciale: il combattimento a due armi prevede incremento azioni 1</em></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Competenza a due armi</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+1 al tiro per colpire</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Doppio attacco</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>+2 al tiro per colpire, deve effettuare entrambi gli attacchi sullo stesso bersaglio</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Maestria a due armi</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>+1 all’ingaggio, sia difensivo che offensivo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Attacco incrociato</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>può effettuare tutti gli attacchi delle armi su di un singolo bersaglio prima di infliggere il danno, se almeno uno degli attacchi va a segno causa i danni delle armi di tutti gli attacchi effettuati</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduearmi-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduearmi-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Arma difensiva</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 alla CA se non attacca con l’arma secondaria</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Parata con mano secondaria</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>se viene colpito in mischia può come reazione immediata effettuare un tiro per colpire con l'arma secondaria contro il punteggio di attacco in sostituzione della CA</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Doppia difesa</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>+2 aggiuntivo alla CA in condizione di difesa totale, se viene mancato in mischia durante questa condizione può effettuare un attacco con l’arma principale come reazione immediata</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Protezione multipla</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>+1 all'ingaggio difensivo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Parata assicurata</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Parata con mano secondaria</em></p>
+                                                                    <p>la disciplina Parata con mano secondaria ottiene un successo automatico</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduearmi-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduearmi-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Finta d’attacco</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>azione gratuita: effettua una finta con l’arma principale per avere +3 al tiro per colpire e danni con l’arma secondaria</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Critico in finta</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Finta d’attacco</em></p>
+                                                                    <p>usando la disciplina Finta d’attacco ottiene anche minaccia di critico +1</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Affondo improvviso</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Finta d’attacco</em></p>
+                                                                    <p>usando la disciplina Finta d’attacco può effettuare un attacco con l’arma principale come reazione immediata se l’arma secondaria colpisce</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Finta in movimento</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Finta d’attacco</em></p>
+                                                                    <p>usando la disciplina Finta d’attacco può scattare come reazione immediata, se sta usando Affondo improvviso lo scatto può avvenire dopo l’attacco con l’arma principale</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Attacco preparatorio</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Finta d’attacco</em></p>
+                                                                    <p>la disciplina Finta d’attacco non richiede più di evitare l'attacco con l’arma principale (attacco con l'arma principale, attacco con arma secondaria in condizione di Finta d’attacco, eventuali reazioni immediate)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab2">
+                                <h1 class="text-center title">A due mani</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduemani-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduemani-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta violenta</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta potente</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+1 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta suprema</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>+1 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta mortale</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>+1 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta divina</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>+1 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduemani-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduemani-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Spinta</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>reazione immediata: se mette a segno un attacco può spingere l’avversario colpito di un quadretto</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Aggressione</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>reazione immediata: se mette a segno un attacco può rendere l’avversario scosso 2 continuato (T)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Sopraffare</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>reazione immediata: se mette a segno un attacco può rendere l’avversario prono</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Frastornare</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>reazione immediata: se mette a segno un attacco può rendere l’avversario frastornato continuato (T)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Devastare</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>reazione immediata: se mette a segno un attacco può causare fino a due condizioni delle discipline possedute di questo albero</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAduemani-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAduemani-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Attacco aggressivo</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>Quando attacca con un'arma a due mani e manca il bersaglio può causare comunque 2 danni al suo avversario</p>
+                                                                                                                                            <p><em>Speciale: L&#39;attacco &#232; comunque da considerarsi mancato</em></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Slancio aggressivo</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>Se manca con un attacco può effettuare un secondo attacco su un bersaglio entro portata adiacente al bersaglio appena attaccato</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Colpo aggressivo</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Attacco aggressivo</em></p>
+                                                                    <p>Se manca con un attacco a due mani può causare comunque il solo danno dell'arma (a livello 0) al bersaglio che stava attaccando</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Slancio migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Slancio aggressivo</em></p>
+                                                                    <p>Può utilizzare Slancio aggressivo anche dopo aver colpito con il primo attacco</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Turbine aggressivo</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Slancio migliorato</em></p>
+                                                                    <p>Può effettuare un attacco contro ogni avversario entro portata</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab3">
+                                <h1 class="text-center title">A una mano</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAunamano-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAunamano-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Manovra difensiva</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 CA contro attacchi in mischia se ha una mano libera</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Contromossa difensiva</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>reazione immediata: se riceve un attacco in mischia può scorrere l’attaccante di un quadretto se ha una mano libera</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Manovra tattica</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>azione movimento: scambia il suo posto con un alleato adiacente se ha una mano libera</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Manovra agile</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>azione gratuita: può scattare un quadretto dopo l’attacco</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Manovra mobile</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>non subisce attacchi di opportunità quando si muove nelle aree minacciate se ha una mano libera</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAunamano-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAunamano-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Afferrare in combattimento</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>azione minore: attacco base contro DR, se colpisce afferra il bersaglio</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Muovere in combattimento</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>azione minore: scorre il bersaglio afferrato in un quadretto libero adiacente al personaggio</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Sbilanciare in combattimento</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>azione minore: attacco base verso il bersaglio afferrato, se colpito finisce prono e rimane afferrato</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Trucidare in combattimento</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>+2 ai tiri per colpire ed ai danni contro avversari afferrati da lui</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Gestire il combattimento</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>+3 alle difese contro avversari afferrati da lui</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenAunamano-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenAunamano-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Equilibrio in combattimento</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+3 al tiro per colpire con attacchi in mischia quando ha una mano libera</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Colpire parti vitali</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Equilibrio in combattimento</em></p>
+                                                                    <p>+1 alla minaccia di critico quando utilizza Equilibrio in combattimento</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Aumentare la precisione</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Equilibrio in combattimento</em></p>
+                                                                    <p>+2 danni quando utilizza Equilibrio in combattimento</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Equilibrio migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Equilibrio in combattimento</em></p>
+                                                                    <p>la disciplina Equilibrio in combattimento è ridotta di un'azione (da azioni 2 ad azioni 1)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Arte del combattimento</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Equilibrio in combattimento</em></p>
+                                                                    <p>durante l’azione di Equilibrio in combattimento può selezionare uno dei seguenti bonus: +2 al tiro per colpire, +2 ai danni, bersaglio prono dopo l’attacco o +2 alla minaccia di critico</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab4">
+                                <h1 class="text-center title">Con lo scudo</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenConloscudo-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenConloscudo-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Addestramento con lo scudo</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 CA aggiuntivo con lo scudo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Proteggere alleati</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Addestramento con lo scudo</em></p>
+                                                                    <p>il bonus di scudo si applica anche agli alleati adiacenti</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Specializzazione con lo scudo</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>resistenza 1/fisico quando impugna lo scudo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Proteggere alleati migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Specializzazione con lo scudo</em></p>
+                                                                    <p>la disciplina Specializzazione con lo scudo viene applicata anche agli alleati adiacenti</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Maestria con lo scudo</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>+1 CA e DR e resistenza 1/fisico quando impugna lo scudo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenConloscudo-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenConloscudo-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Colpo con lo scudo</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>azione minore: attacco base, 1d4 danni</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Botta con lo scudo</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Colpo con lo scudo</em></p>
+                                                                    <p>la disciplina Colpo con lo scudo può spingere un quadretto</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Colpo con lo scudo migliorato</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Colpo con lo scudo</em></p>
+                                                                    <p>il danno dello scudo diventa 2d4</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Reagire con lo scudo</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Colpo con lo scudo</em></p>
+                                                                    <p>reazione immediata: se subisce un attacco in mischia ed è in difesa totale può usare la disciplina Colpo con lo scudo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Colpo con lo scudo potenziato</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Colpo con lo scudo</em></p>
+                                                                    <p>il danno dello scudo diventa 3d4</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenConloscudo-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenConloscudo-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Scudo difensivo</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 all'ingaggio difensivo</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Protezione a distanza</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+2 CA e DR contro attacchi a distanza</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Proteggere zone vitali</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>riduce la minaccia di critico dell’attaccante di 1</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Ricevere l’attacco</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>interruzione immediata: +2 CA e DR prima di subire un attacco</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Barriera impenetrabile</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Ricevere l&#39;attacco</em></p>
+                                                                    <p>Quando sta per riceve un attacco su CA o DR può usare un'interruzione immediata per fare in modo che l'attaccante manchi automaticamente.</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab5">
+                                <h1 class="text-center title">Lancio</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenLancio-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenLancio-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio potente</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+2 ai danni</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio preciso</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+2 al tiro per colpire</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Maestria del lancio</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Lancio preciso o lancio potente</em></p>
+                                                                    <p>+1 al tiro per colpire e/o ai danni quando usa Lancio preciso o Lancio potente</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Arte nel lancio</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Lancio potente o lancio preciso</em></p>
+                                                                    <p>+1 al tiro per colpire e/o ai danni quando usa Lancio preciso o Lancio potente</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio divino</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Lancio preciso o lancio potente</em></p>
+                                                                    <p>+1 al tiro per colpire e/o ai danni quando usa Lancio preciso o Lancio potente</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenLancio-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenLancio-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio in mischia</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>Selezionando due bersagli adiacenti effettua un tiro per colpire a testa, considera solo il risultato del d20 più alto.</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                            <p><em>Speciale: Se il risultato dei due tiri &#232; uguale pu&#242; scegliere il bersaglio a piacimento.</em></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Rimbalzo in mischia</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Lancio in mischia</em></p>
+                                                                    <p>Con l'azione di lancio in mischia, se colpisce anche il secondo bersaglio gli causa metà dei danni (per difetto)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio ad area</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Lancio in mischia</em></p>
+                                                                    <p>L'azione del lancio in mischia può avere come area emanazione 1 invece di due bersagli adiacenti, effettua un tiro per ogni bersaglio nell'area</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio in mischia migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Lancio in mischia</em></p>
+                                                                    <p>L'azione di lancio in mischia colpisce un bersaglio aggiuntivo (selezionato sempre in ordine di tiro di d20 per colpire)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio selettivo</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Lancio ad area</em></p>
+                                                                    <p>Può selezionare i bersagli ignorandone eventuali presente nell'area di lancio da area</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenLancio-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenLancio-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio attento</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>può attaccare con un'arma da lancio un bersaglio diverso da chi lo minaccia senza subire attacco di opportunità</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio possente</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>Spinge 1 se colpisce con un'arma lanciata</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Dai e lancia</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Lancio attento</em></p>
+                                                                    <p>Può effettuare un attacco base in mischia prima di lanciare ad un bersaglio diverso</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lancio alle gambe</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>Quando colpisce con un'arma lanciata mette prono l'avversario</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Picchia e lancia</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Dai e lancia</em></p>
+                                                                    <p>L'azione di Dai e lancia non ha necessità di utilizzare azioni aggiuntive, ottiene un bonus +1 a txc e danni su uno dei due attacchi a scelta.</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab6">
+                                <h1 class="text-center title">Senza armi</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenSenzaarmi-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenSenzaarmi-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Raffica di attacchi</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>può effettuare due attacchi senz’armi applicando una penalità -2 a tutti gli attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Raffica di attacchi migliorata</h2>
+                                                                    <p>Livello: 3</p>
+                                                                        <p><em>Requisiti: Raffica di attacchi</em></p>
+                                                                    <p>può effettuare tre attacchi senz’armi applicando una penalità -4 a tutti gli attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Raffica di attacchi potenziata</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Raffica di attacchi migliorata</em></p>
+                                                                    <p>può effettuare quattro attacchi senz’armi applicando una penalità -6 a tutti gli attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Raffica di attacchi superiore</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Raffica di attacchi potenziata</em></p>
+                                                                    <p>può effettuare cinque attacchi senz’armi applicando una penalità -8 a tutti gli attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Raffica di attacchi suprema</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Raffica di attacchi superiore</em></p>
+                                                                    <p>può effettuare sei attacchi senz’armi applicando una penalità -10 a tutti gli attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenSenzaarmi-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenSenzaarmi-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lotta</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>reazione immediata: se effettua un attacco con successo può afferrare il bersaglio</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Cambiare la presa</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>azione movimento: effettua una prova di Forza per passare da difensore ad attaccante quando è afferrato</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Lotta superiore</h2>
+                                                                    <p>Livello: 5</p>
+                                                                        <p><em>Requisiti: Lotta</em></p>
+                                                                    <p>Il difensore afferrato non è in grado di muoversi durante la sua azione. può usare un’azione di movimento e una prova di Forza per mettere prono il bersaglio afferrato, il bersaglio deve superare una prova di Forza per rialzarsi.</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Stretta del pitone</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Lotta</em></p>
+                                                                    <p>+2 danni contro il bersaglio afferrato da lui</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Stretta del boa</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Lotta</em></p>
+                                                                    <p>+2 alla minaccia di critico contro il bersaglio afferrato da lui</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenSenzaarmi-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenSenzaarmi-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Pugno montante</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>l’attacco senza armi rende il bersaglio scosso 1 per un round</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Pugno frastornante</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>l’attacco senza armi rende il bersaglio frastornato per un round</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Pugno continuato</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>gli effetti delle discipline di quest’albero sono continuate (T)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Pugno disorientante</h2>
+                                                                    <p>Livello: 7</p>
+                                                                    <p>l’attacco senza armi rende il bersaglio disorientato per un round</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Pugno stordente</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>l’attacco senza armi rende il bersaglio stordito per un round</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hctab7">
+                                <h1 class="text-center title">Tiro</h1>
+                                <!-- accordion start -->
+                                <div class="panel-group panel-transparent" id="accordion-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenTiro-1" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 1
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenTiro-1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro potente</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 danni entro metà gittata</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro possente</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>spinge il bersaglio colpito di 1 quadretto</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro potente migliorato</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>+1 danni entro metà gittata</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro possente migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Tiro possente</em></p>
+                                                                    <p>spinge il bersaglio colpito di 3 quadretti</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro potente e possente</h2>
+                                                                    <p>Livello: 9</p>
+                                                                    <p>+1 ai danni e il bersaglio è prono</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenTiro-2" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 2
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenTiro-2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro preciso</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>+1 al tiro per colpire quando il bersaglio è in mischia</p>
+                                                                                                                                            <p><em>Speciale: L&#39;attacco a distanza prevede una penalit&#224; -2 cumulativa per ogni creatura adiacente al bersaglio</em></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro concentrato</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+1 tiro per colpire</p>
+                                                                        <p><em>Azioni: 1</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro ragionato</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>+2 tiro per colpire</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro sofisticato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Tiro ragionato</em></p>
+                                                                    <p>+2 ai danni con Tiro ragionato</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion-3" href="#collapseGenTiro-3" class="collapsed">
+                                                        <i class="fa fa-bold"></i>Albero 3
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapseGenTiro-3" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro rapido</h2>
+                                                                    <p>Livello: 1</p>
+                                                                    <p>-3 al tiro per colpire per effettuare due attacchi</p>
+                                                                        <p><em>Azioni: 2</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro rapido preciso</h2>
+                                                                    <p>Livello: 3</p>
+                                                                    <p>+1 tiro per colpire con Tiro rapido</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro rapido veloce</h2>
+                                                                    <p>Livello: 5</p>
+                                                                    <p>la disciplina Tiro rapido è ridotta di un'azione (da azioni 2 ad azioni 1)</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro rapido migliorato</h2>
+                                                                    <p>Livello: 7</p>
+                                                                        <p><em>Requisiti: Tiro rapido</em></p>
+                                                                    <p>-8 al tiro per colpire per effettuare 3 attacchi</p>
+                                                                        <p><em>Azioni: 3</em></p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="box-style-2 white-bg object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                                                    <i class="fa fa-leaf"></i>
+                                                                    <h2>Tiro rapido preciso migliorato</h2>
+                                                                    <p>Livello: 9</p>
+                                                                        <p><em>Requisiti: Tiro rapido</em></p>
+                                                                    <p>+2 al tiro per colpire con la disciplina Tiro rapido o Tiro rapido migliorato</p>
+                                                                                                                                    </div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+
+
+                    <!-- tabs end -->
+                    <!-- main end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main-container end -->
+
+
+
+        <!-- footer start (Add "light" class to #footer in order to enable light footer) -->
+        <!-- ================ -->
+        <footer id="footer">
+            <!-- .subfooter start -->
+            <!-- ================ -->
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright © 2020 GV Project by <a target="_blank" href="#">The Rolling Kobold Team</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .subfooter end -->
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- page-wrapper end -->
+    <!-- JavaScript files placed at the end of the document so the pages load faster
+    ================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script src="/Scripts/jquery-2.2.4.js"></script>
+<script src="/Scripts/DataTables/jquery.dataTables.min.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+
+    
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="/Scripts/modernizr-2.8.3.js"></script>
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Isotope javascript -->
+    <script type="text/javascript" src="/plugins/isotope/isotope.pkgd.min.js"></script>
+    <!-- Owl carousel javascript -->
+    <script type="text/javascript" src="/plugins/owl-carousel/owl.carousel.js"></script>
+    <!-- Magnific Popup javascript -->
+    <script type="text/javascript" src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Appear javascript -->
+    <script type="text/javascript" src="/plugins/jquery.appear.js"></script>
+    <!-- Count To javascript -->
+    <script type="text/javascript" src="/plugins/jquery.countTo.js"></script>
+    <!-- Parallax javascript -->
+    <script src="/plugins/jquery.parallax-1.1.3.js"></script>
+    <!-- SmoothScroll javascript -->
+    <script type="text/javascript" src="/plugins/jquery.browser.js"></script>
+    <script type="text/javascript" src="/plugins/SmoothScroll.js"></script>
+    <!-- Initialization of Plugins -->
+    <script type="text/javascript" src="/Scripts/template.js"></script>
+</body>
+</html>
+

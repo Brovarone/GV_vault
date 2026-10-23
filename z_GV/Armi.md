@@ -1,0 +1,46 @@
+Il danno delle armi scala con il livello del personaggio:
+un giocatore di livello 1 controlla il danno delle armi nella colonna Danno1
+un giocatore di livello 4 controlla il danno delle armi nella colonna Danno3
+
+| Nome                   | Gruppo    | Semplice | Esotica | Taglia | TxC             | Danno1          | Danno3   | Danno6   | Danno9      | Mischia | Gittata | Note                                              |
+| ---------------------- | --------- | -------- | ------- | ------ | --------------- | --------------- | -------- | -------- | ----------- | ------- | ------- | ------------------------------------------------- |
+| Arco lungo             | Archi     |          |         | G      | +0              | 1d8             | 1d10     | 2d6      | 2d8         |         | 30      |                                                   |
+| Arco lungo composito   | Archi     |          |         | G      | +1              | 1d8             | 1d10     | 2d6      | 2d8         |         | 30      |                                                   |
+| Arco corto             | Archi     |          |         | M      | +0              | 1d6             | 1d8      | 1d10     | 2d6         |         | 20      |                                                   |
+| Arco corto composito   | Archi     |          |         | M      | +1              | 1d6             | 1d8      | 1d10     | 2d6         |         | 20      |                                                   |
+| Ascia bipenne          | Asce      |          |         | G      | +0              | 2d4+2           | 3d4+2    | 4d4+2    | 5d4+2       |         | 0       | critico +1d10                                     |
+| Alabarda               | Asce      |          |         | G      | +0              | 3d4             | 4d4      | 5d4      | 6d4         |         | 0       | portata 2                                         |
+| Ascia da battaglia     | Asce      |          |         | M      | +0              | 2d4             | 3d4      | 4d4      | 5d4         |         | 0       |                                                   |
+| Ascia da guerra        | Asce      |          |         | M      | +0              | 2d4+1           | 3d4+1    | 4d4+1    | 5d4+1       |         | 0       | critico +1d6                                      |
+| Ascia da lancio        | Asce      |          |         | M      | +0              | 1d6             | 2d4      | 2d4+2    | 3d4         |         | 6       |                                                   |
+| Accetta                | Asce      |          |         | P      | +0              | 1d4             | 1d4+1    | 2d4      | 3d4         |         | 4       |                                                   |
+| Tomahawk               | Asce      |          |         | P      | +0              | 1d8             | 2d4+1    | 3d4      | 4d4         |         | 6       |                                                   |
+| Balestra pesante       | Balestre  |          |         | G      | +1              | 1d8             | 1d10     | 1d12     | 2d8         |         | 15      | ricarica minore                                   |
+| Balestra a ripetizione | Balestre  |          |         | G      | -3 (5 attacchi) | 1d4 per attacco | 1d6      | 1d8      | 1d10        |         | 10      | ricarica standard                                 |
+| Balestra leggera       | Balestre  |          |         | M      | +1              | 1d6             | 1d8      | 1d10     | 1d12        |         | 10      | ricarica minore                                   |
+| Spadone                | Lame      |          |         | G      | +1              | 1d10            | 1d12     | 2d8      | 3d6         |         | 0       |                                                   |
+| Falchion               | Lame      |          |         | G      | +0              | 1d12            | 2d8      | 2d10     | 2d12        |         | 0       |                                                   |
+| Pugnale                | Lame      |          |         | m      | +2              | 1d4             | 1d6      | 1d8      | 1d10        |         | 4       |                                                   |
+| Spada lunga            | Lame      |          |         | M      | +1              | 1d8             | 1d10     | 1d12     | 2d6+2       |         | 0       |                                                   |
+| Spada bastarda         | Lame      |          |         | M      | +1              | 1d10            | 1d12     | 2d6+2    | 2d8         |         | 0       |                                                   |
+| Spada corta            | Lame      |          |         | P      | +1              | 1d6             | 1d8      | 1d10     | 1d12        |         | 0       |                                                   |
+| Stocco                 | Lame      |          |         | P      | +2              | 1d6             | 1d8      | 1d10     | 1d12        |         | 0       | critico +1d8                                      |
+| Lancia lunga           | Lance     |          |         | G      | +0              | 1d10            | 1d12     | 1d12+2   | 1d12+5      |         | 0       | ignora 1 la riduzione danno fisico, portata 2     |
+| Tridente               | Lance     |          |         | G      | +0              | 1d10            | 1d12     | 1d12+4   | 1d20        |         | 0       | ignora 1 la riduzione danno fisico, critico +1d12 |
+| Lancia                 | Lance     |          |         | M      | +0              | 1d8             | 1d10     | 1d12     | 1d12+2      |         | 8       | ignora 1 la riduzione danno fisico                |
+| Lancia corta           | Lance     |          |         | P      | +0              | 1d6             | 1d8      | 1d10     | 1d12        |         | 0       | ignora 1 la riduzione danno fisico                |
+| Giavellotto            | Lance     |          |         | P      | +0              | 1d6             | 1d8      | 1d10     | 1d12        |         | 10      | ignora 1 la riduzione danno fisico                |
+| Colpo senz'armi        | Mani nude |          |         | m      | +0              | 1d4             | 1d6      | 1d8      | 1d10        |         | 0       | i non competenti causano danni debilitanti        |
+| Maglio                 | Martelli  |          |         | G      | -1              | 2d6             | 2d8      | 2d10     | 2d12        |         | 0       |                                                   |
+| Martello da guerra     | Martelli  |          |         | M      | -1              | 1d10            | 2d6      | 2d8      | 2d10        |         | 0       |                                                   |
+| Martello-picca         | Martelli  |          |         | M      | -1/+1           | 1d10/1d8        | 2d6/1d10 | 2d8/1d12 | 2d10/1d12+2 |         | 0       | Ad ogni attacco può scegliere che lato usare      |
+| Martello da lancio     | Martelli  |          |         | M      | -1              | 1d8             | 1d10     | 2d6      | 2d8         |         | 6       |                                                   |
+| Martello leggero       | Martelli  |          |         | P      | -1              | 1d8             | 1d10     | 2d6      | 2d8         |         | 0       |                                                   |
+| Bastone                | Mazze     |          |         | G      | +0              | 1d8             | 1d10     | 2d6      | 2d8         |         | 0       |                                                   |
+| Mazzafrusto pesante    | Mazze     |          |         | G      | +0              | 1d10            | 2d6      | 2d8      | 3d6         |         | 0       |                                                   |
+| Morning star           | Mazze     |          |         | M      | +0              | 1d8             | 1d10     | 2d6      | 2d8         |         | 0       |                                                   |
+| Mazzafrusto            | Mazze     |          |         | M      | +0              | 1d8             | 1d10     | 2d6      | 2d8         |         | 0       | +2 con azioni di sbilanciare e disarmare          |
+| Randello               | Mazze     |          |         | M      | +0              | 1d6             | 1d8      | 1d10     | 2d6         |         | 0       |                                                   |
+| Mazza leggera          | Mazze     |          |         | P      | +0              | 1d4             | 1d6      | 1d8      | 1d10        |         | 0       |                                                   |
+| Mazzafrusto leggero    | Mazze     |          |         | P      | +0              | 1d6             | 1d8      | 1d10     | 2d6         |         | 0       |                                                   |
+| Fionda                 | Mazze     |          |         | P      | +0              | 1d6             | 1d8      | 1d10     | 2d6         |         | 15      |                                                   |

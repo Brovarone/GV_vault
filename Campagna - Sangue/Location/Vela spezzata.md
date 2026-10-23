@@ -1,0 +1,33 @@
+---
+fileClass: location
+type: Location
+poi:
+parent:
+  - "[[Karal Dum]]"
+tipo_location: Locanda
+picture: ""
+---
+
+## Impressioni Generali
+* La locandiera è una nana.
+* Catapecchia sul molo.
+
+## Punti di Interesse (POI)
+| POI          | Riferimento PNG/Note                |
+| :----------- | :---------------------------------- |
+| Goblin gobbo | Lo aveva corrotto Grumal con una mo |
+
+## Eventi e Scoperte
+*
+
+> [!png]- PNG
+![[_Queries#^query-png-location]]
+
+> [!organizzazioni]- Organizzazioni
+![[_Queries#^query-organizzazioni]]
+
+> [!sublocation]- Sub Location 
+![[_Queries#^query-sublocation]]
+
+> [!apparein]- Appare In 
+![[_Queries#^query-apparein]]
